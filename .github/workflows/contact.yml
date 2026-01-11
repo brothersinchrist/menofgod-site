@@ -1,0 +1,3 @@
+- name: Inject contact token
+  run: |
+    echo "window.CONTACT_TOKEN='${{ secrets.CONTACT_TOKEN }}'" > _site/js/contact-token.js
