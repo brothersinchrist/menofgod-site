@@ -138,6 +138,37 @@
 
 <!-- Form logic -->
 <script>
+function openModal(title, message) {
+  const modal = document.getElementById("contact-modal");
+  document.getElementById("modal-title").textContent = title;
+  document.getElementById("modal-message").textContent = message;
+
+  modal.classList.add("active");
+  modal.setAttribute("aria-hidden", "false");
+
+  // Trap focus inside modal
+  document.querySelector(".modal-close").focus();
+}
+
+function closeModal() {
+  const modal = document.getElementById("contact-modal");
+  modal.classList.remove("active");
+  modal.setAttribute("aria-hidden", "true");
+}
+
+/* Close on Escape */
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeModal();
+});
+
+/* Close when clicking outside the card */
+document.addEventListener("click", (e) => {
+  const modal = document.getElementById("contact-modal");
+  if (e.target === modal) closeModal();
+});
+</script>
+
+<script>
 async function handleContactSubmit(e) {
   e.preventDefault();
 
@@ -176,7 +207,7 @@ async function handleContactSubmit(e) {
     log("Response body: " + text);
 
     if (res.ok) {
-      alert("Thanks for reaching out. We’re grateful for your message and will follow up soon.");
+      openModal("Message Sent", "Thanks for reaching out. We’re grateful for your message and will follow up soon.");
       form.reset();
       log("Form submitted successfully.");
     } else {
