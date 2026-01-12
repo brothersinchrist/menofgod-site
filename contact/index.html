@@ -94,23 +94,23 @@
     </p>
 
     <div class="social-links">
-      <a href="#" aria-label="YouTube">
+      <a href="#" onclick="comingSoon('YouTube'); return false;" aria-label="YouTube">
         <img src="/menofgod-site/assets/page/icons/youtube.svg" alt="" />
         YouTube
       </a>
-      <a href="#" aria-label="X">
+      <a href="#" onclick="comingSoon('X (Twitter)'); return false;" aria-label="X">
         <img src="/menofgod-site/assets/page/icons/x.svg" alt="" />
         X (Twitter)
       </a>
-      <a href="#" aria-label="Facebook">
+      <a href="#" onclick="comingSoon('Facebook'); return false;" aria-label="Facebook">
         <img src="/menofgod-site/assets/page/icons/facebook.svg" alt="" />
         Facebook
       </a>
-      <a href="#" aria-label="Instagram">
+      <a href="#" onclick="comingSoon('Instagram'); return false;" aria-label="Instagram">
         <img src="/menofgod-site/assets/page/icons/instagram.svg" alt="" />
         Instagram
       </a>
-      <a href="#" aria-label="Rumble">
+      <a href="#" onclick="comingSoon('Rumble'); return false;" aria-label="Rumble">
         <img src="/menofgod-site/assets/page/icons/rumble.svg" alt="" />
         Rumble
       </a>
@@ -118,7 +118,7 @@
 
     <div class="contact-email">
       <strong>Email:</strong><br />
-      contact@menofgodpodcast.com
+      brothersinchrist.menofgod@gmail.com
     </div>
 
     <p class="contact-note">
@@ -137,6 +137,15 @@
 </section>
 
 <!-- Form logic -->
+<script>
+  function comingSoon(featureName) {
+    openModal(
+      "Coming Soon",
+      `${featureName} is not available yet, but it’s on the way.`
+    );
+  }
+</script>
+
 <script>
 function openModal(title, message) {
   const modal = document.getElementById("contact-modal");
