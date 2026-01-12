@@ -109,3 +109,57 @@
 
   filter: invert(85%);
 }
+
+/* Modal overlay */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s ease;
+  z-index: 9999;
+}
+
+/* When active */
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Modal card */
+.modal-content {
+  background: var(--card-bg, #fff);
+  color: var(--text-color, #222);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  animation: fadeInUp .3s ease;
+}
+
+/* Close button */
+.modal-close {
+  margin-top: 1.5rem;
+  padding: .6rem 1.2rem;
+  background: var(--primary, #2a4b8d);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: var(--primary-dark, #1f3769);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
