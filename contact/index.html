@@ -83,12 +83,6 @@
         We will never sell your information.
       </p>
     </form>
-
-    <!-- Debug panel -->
-    <div id="debug-panel" style="margin-top:1em; padding:1em; background:#f9f9f9; border:1px solid #ccc;">
-      <strong>Debug Output:</strong>
-      <pre id="debug-output" style="white-space:pre-wrap;"></pre>
-    </div>
   </div>
 
   <div class="contact-card card">
@@ -174,7 +168,7 @@ async function handleContactSubmit(e) {
     log("Response body: " + text);
 
     if (res.ok) {
-      alert("Message sent successfully.");
+      alert("Thanks for reaching out. We’re grateful for your message and will follow up soon.");
       form.reset();
       log("Form submitted successfully.");
     } else {
