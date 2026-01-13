@@ -115,6 +115,11 @@ a:hover {
   background: rgba(212,163,115,0.07);
 }
 
+.nav-menu a.active {
+  color: var(--accent);
+  background: rgba(212,163,115,0.12);
+}
+
 /* Hamburger button (mobile) */
 .nav-toggle {
   display: none;
