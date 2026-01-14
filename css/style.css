@@ -317,11 +317,12 @@ footer {
   overflow: hidden;
   /* Constrained full-width with reduced side gutters */
   --hero-gutter: 1.25rem; /* smaller gap to reduce overall width */
-  width: calc(100vw - (var(--hero-gutter) * 2));
+  width: 100%;
   max-width: 1400px;
-  margin: var(--hero-gutter) auto; /* top and bottom equal to side gutter, centered horizontally */
+  margin: 0 auto; /* top and bottom equal to side gutter, centered horizontally */
   border-radius: 0; /* no outer rounding for full-width visual */
   box-sizing: border-box;
+  padding: 0 var(--hero-gutter);
 }
 
 /* Inner container constrains content and provides matching horizontal + top gutter */
