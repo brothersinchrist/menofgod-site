@@ -51,6 +51,7 @@ a:hover {
 }
 .section.alt {
   background: var(--bg-alt);
+  margin-top: 2rem;
 }
 .section > h2 {
   text-align: center;
@@ -147,7 +148,8 @@ a:hover {
   text-align: center;
   padding: 6rem 1.5rem;
   min-height: 50vh;
-  background: url("../assets/page/images/hero-bg.jpg") center/cover no-repeat;
+  /* background: url("../assets/page/images/hero-bg.jpg") center/cover no-repeat; */
+  background: url('{{ page.cover | default: "/assets/page/images/hero-bg.jpg" }}') center/cover no-repeat;
   color: #fff;
   display: flex;
   flex-direction: column;

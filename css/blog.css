@@ -116,7 +116,9 @@
   border-radius: 0.75rem;
   overflow: hidden;
   margin-bottom: 1.75rem;
-}/* When blog-hero is used as the shared page-hero, remove outer rounding so it goes edge-to-edge */
+}
+
+/* When blog-hero is used as the shared page-hero, remove outer rounding so it goes edge-to-edge */
 .blog-hero.page-hero { border-radius: 0; }.blog-hero::before {
   content: "";
   position: absolute;
