@@ -13,11 +13,12 @@
 }
 
 .store-card {
-  max-width: 420px;
-  background: var(--bg-alt);
-  border-radius: 0.75rem;
-  padding: 1rem;
-  text-align: center;
+  background: var(--bg-alt); /* make cards stand out */
+  padding: 1.5rem;           /* inner spacing so content isn’t cramped */
+  border-radius: 0.75rem;    /* rounded corners */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2); /* subtle shadow for separation */
+  max-width: 420px;          /* optional width limit */
+  width: 100%;
   justify-self: auto;
 }
 
