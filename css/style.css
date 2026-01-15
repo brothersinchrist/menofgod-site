@@ -113,22 +113,11 @@ a:hover {
   font-size: 1.5rem;
 }
 
-/* Always start nav closed on page show */
 .nav-menu {
   display: flex;
   gap: 1.4rem;
   align-items: center;
   font-weight: 600;
-  transform: translateX(100%);
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* When JS toggles it open */
-.nav-menu.open {
-  transform: translateX(0);
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .nav-menu a {
@@ -321,9 +310,28 @@ footer {
 
 @media (max-width:768px) {
   .nav-toggle{display:flex}
-  .nav-menu{display:none;flex-direction:column;position:absolute;top:var(--header-height);right:1rem;background:var(--bg-alt);padding:1rem;border-radius:.5rem;width:220px;z-index:2000;box-shadow:0 10px 30px rgba(0,0,0,0.4)}
+  .nav-menu{
+     flex-direction:column;
+     position:absolute;
+     top:var(--header-height);
+     right:1rem;
+     background:var(--bg-alt);
+     padding:1rem;
+     border-radius:.5rem;
+     width:220px;
+     z-index:2000;
+     box-shadow:0 10px 30px rgba(0,0,0,0.4)
+     transform: translateX(100%);
+     opacity: 0;
+     pointer-events: none;
+     transition: transform 0.25s ease, opacity 0.25s ease;
+  }
   .nav-menu a{padding:.6rem 0}
-  .nav-menu.open{display:flex}
+  .nav-menu.open{
+     transform: translateX(0);
+     opacity: 1;
+     pointer-events: auto;
+  }
   .hero{padding:4rem 1rem;min-height:40vh}
 }
 
