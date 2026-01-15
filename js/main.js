@@ -92,3 +92,16 @@ function adjustHeaderOffset() {
   document.body.style.paddingTop = h + 'px';
   handleScroll();
 }
+
+// ----------------------------
+// Close the menu if resizing or a link selected
+// ----------------------------
+window.addEventListener("pageshow", () => {
+  const nav = document.getElementById("nav-links");
+  if (nav) nav.classList.remove("open");
+});
+
+window.addEventListener("resize", () => {
+  const nav = document.getElementById("nav-links");
+  if (nav) nav.classList.remove("open");
+});
