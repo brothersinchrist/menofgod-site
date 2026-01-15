@@ -24,7 +24,7 @@
 
 .store-image {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
   border-radius: 0.75rem;
   margin-bottom: 1rem;
@@ -51,6 +51,9 @@
   text-decoration: none;
 }
 
+/* ===============================
+   MOBILE
+================================= */
 /* Tablet / mobile */
 @media (max-width: 768px) {
   .storefront-grid {
@@ -66,12 +69,14 @@
 }
 
 @media (max-width: 520px) {
-  .storefront-grid {
-    grid-template-columns: 1fr; /* single column */
-    padding: 0 0.75rem;
-    gap: 1rem;
+  .store-card {
+    max-width: 100%;
   }
   .store-image {
-    height: 120px;
+    height: 140px;
+  }
+  .storefront-grid {
+    gap: 1.5rem;
+    padding: 0 0.75rem;
   }
 }
