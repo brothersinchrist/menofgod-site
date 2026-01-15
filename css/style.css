@@ -11,6 +11,21 @@
   box-sizing: border-box;
 }
 
+/* GLOBAL SAFETY NET — prevents mobile horizontal scroll */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Media should never exceed its container */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ===============================
    GLOBAL LAYOUT
 ================================= */
@@ -377,12 +392,29 @@ footer {
   .page-hero h1 { font-size: 1.3rem; }
 }
 
+@media (max-width: 600px) {  
+  .blog-posts {  
+    grid-template-columns: 1fr;  
+    max-width: 100%;  
+    padding: 0 0.75rem;  
+  }  
+}
+
+@media (max-width: 600px) {  
+  .episodes-grid {  
+    grid-template-columns: 1fr;  
+    max-width: 100%;  
+    padding: 0 0.75rem;  
+  }  
+}
+
 /* Shared page content styles */
 .content-page, .blog-post, .episode-post {
   padding: 2.25rem 1.25rem;
   margin: 1.25rem auto 2rem;
   max-width: 1200px;
 }
+
 .content-page p,
 .content-page li,
 .content-page blockquote,
