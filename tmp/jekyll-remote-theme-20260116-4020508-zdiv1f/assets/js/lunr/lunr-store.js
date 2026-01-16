@@ -24,7 +24,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Men of God",
-        "excerpt":"Men of God Men called to lead their families and serve their country. Men of God Equipping men to lead with courage, conviction, and Christ at the center. Welcome to Men of God, a ministry built on brotherhood, family, and faith. We’re here to encourage men to stand firm, build...","categories": [],
+        "excerpt":"Men of God Men called to lead their families and serve their country. Equipping men to lead with courage, conviction, and Christ at the center. Welcome to Men of God, a ministry built on brotherhood, family, and faith. We’re here to encourage men to stand firm, build strong homes, and...","categories": [],
         "tags": [],
         "url": "/menofgod-site/",
         "teaser": null
