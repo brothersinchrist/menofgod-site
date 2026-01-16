@@ -5304,6 +5304,65 @@ hr {
 }
 
 /* -----------------------------------------
+   MISSION + SCRIPTURE SECTION
+   ----------------------------------------- */
+.mog-mission-section {
+  margin: 4rem auto;
+  max-width: 900px;
+  padding: 0 1.5rem;
+}
+
+.mog-mission-tagline {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.mog-mission-body {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+}
+
+.mog-mission-scripture {
+  background: #111;
+  border-left: 4px solid #4a3f35;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  border-radius: 6px;
+  font-style: italic;
+  position: relative;
+}
+
+.mog-mission-scripture p {
+  margin: 0;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.mog-mission-reference {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  text-align: right;
+}
+
+/* Optional grit overlay */
+.mog-mission-scripture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/page/textures/grit.png");
+  opacity: 0.08;
+  pointer-events: none;
+  border-radius: 6px;
+}
+
+/* -----------------------------------------
    BLOG INDEX
    ----------------------------------------- */
 .mog-blog-index {
