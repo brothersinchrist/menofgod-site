@@ -5372,6 +5372,203 @@ hr {
   }
 }
 /* -----------------------------------------
+   BLOG POST LAYOUT
+   ----------------------------------------- */
+.mog-post {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.mog-post-hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #333;
+  margin-bottom: 2rem;
+}
+
+.mog-post-header {
+  margin-bottom: 2rem;
+}
+
+.mog-post-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.mog-post-meta {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.mog-post-summary {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.mog-post-body {
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.mog-post-body h2,
+.mog-post-body h3,
+.mog-post-body h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.mog-post-body img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+  border: 1px solid #333;
+}
+
+/* -----------------------------------------
+   RESPONSIVE
+   ----------------------------------------- */
+@media (max-width: 768px) {
+  .mog-post-title {
+    font-size: 1.9rem;
+  }
+}
+/* -----------------------------------------
+   RUGGED PULL-QUOTE SYSTEM
+   ----------------------------------------- */
+.mog-pullquote-wrapper {
+  margin: 3rem auto;
+}
+
+.mog-pullquote {
+  background: #111;
+  border-left: 4px solid #4a3f35;
+  border-right: 4px solid #4a3f35;
+  padding: 1.75rem 2rem;
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.mog-pullquote-left {
+  text-align: left;
+}
+
+.mog-pullquote-right {
+  text-align: right;
+}
+
+.mog-pullquote-mark {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #4a3f35;
+  line-height: 1;
+}
+
+.mog-pullquote-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #fff;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+.mog-pullquote-ref {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* Subtle grit texture overlay (optional) */
+.mog-pullquote::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/page/textures/grit.png");
+  opacity: 0.08;
+  pointer-events: none;
+  border-radius: 6px;
+}
+
+/* -----------------------------------------
+   BREAKOUT (full-width)
+   ----------------------------------------- */
+.mog-pullquote-breakout .mog-pullquote {
+  max-width: none;
+  width: 100%;
+  border-radius: 0;
+  border-left-width: 6px;
+  border-right-width: 6px;
+}
+
+/* -----------------------------------------
+   RESPONSIVE
+   ----------------------------------------- */
+@media (max-width: 600px) {
+  .mog-pullquote {
+    padding: 1.25rem 1.5rem;
+  }
+  .mog-pullquote-text {
+    font-size: 1.25rem;
+  }
+  .mog-pullquote-mark {
+    font-size: 2.5rem;
+  }
+}
+/* -----------------------------------------
+   SHARE BAR
+   ----------------------------------------- */
+.mog-share-bar {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #222;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.mog-share-label {
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.mog-share-btn {
+  padding: 0.4rem 0.75rem;
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mog-share-btn:hover {
+  background: #4a3f35;
+  border-color: #4a3f35;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .mog-share-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* -----------------------------------------
    MEN OF GOD — RUGGED FOOTER
    ----------------------------------------- */
 .mog-footer {
