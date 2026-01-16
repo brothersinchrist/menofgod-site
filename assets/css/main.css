@@ -5304,6 +5304,74 @@ hr {
 }
 
 /* -----------------------------------------
+   BLOG INDEX
+   ----------------------------------------- */
+.mog-blog-index {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.mog-blog-card {
+  display: flex;
+  gap: 1.5rem;
+  background: #111;
+  border: 1px solid #222;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.mog-blog-card-image img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+.mog-blog-card-content {
+  flex: 1;
+}
+
+.mog-blog-card-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.mog-blog-card-title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mog-blog-card-title a:hover {
+  color: #4a3f35;
+}
+
+.mog-blog-card-meta {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 0.75rem;
+}
+
+.mog-blog-card-summary {
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+/* -----------------------------------------
+   RESPONSIVE
+   ----------------------------------------- */
+@media (max-width: 768px) {
+  .mog-blog-card {
+    flex-direction: column;
+  }
+  .mog-blog-card-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* -----------------------------------------
    MEN OF GOD — RUGGED FOOTER
    ----------------------------------------- */
 .mog-footer {
