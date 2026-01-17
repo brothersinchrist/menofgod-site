@@ -2,17 +2,12 @@
 
 This guide explains how to create and manage content for the Men of God website using the CMS. It covers:
 
-Blog posts
-
-Episodes
-
-Pages
-
-Products
-
-Navigation
-
-Hosts
+- Blog posts
+- Episodes
+- Pages
+- Products
+- Navigation
+- Hosts
 
 Hero system
 
@@ -22,41 +17,16 @@ Styling system
 
 Front Matter Fields
 
-Field
-
-Description
-
-title
-
-Blog post title.
-
-date
-
-Publish date.
-
-author
-
-Name of the author.
-
-cover
-
-Featured image for the post.
-
-summary
-
-Short excerpt used in previews.
-
-comments
-
-Enable/disable comments.
-
-publish
-
-Controls visibility on the site.
-
-body
-
-Main content (rich text).
+| Field | Description |
+|---|---|
+| `title` | Blog post title. |
+| `date` | Publish date. |
+| `author` |Name of the author. |
+| `cover` | Featured image for the post. |
+| `summary` | Short excerpt used in previews.|
+| `comments` | Enable/disable comments. |
+| `publish` | Controls visibility on the site. |
+| `body` | Main content (rich text). |
 
 Hero Behavior
 
