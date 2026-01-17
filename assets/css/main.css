@@ -5251,8 +5251,8 @@ a:hover {
 }
 
 /* -----------------------------------------
-   HERO
-   ----------------------------------------- */
+   HERO — MEN OF GOD SYSTEM
+----------------------------------------- */
 .mog-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/assets/page/images/hero-bg.jpg") center/cover no-repeat;
   min-height: 60vh;
@@ -5261,6 +5261,101 @@ a:hover {
   justify-content: center;
   text-align: center;
   padding: 4rem 1.5rem;
+  color: #f7f5f2;
+}
+.mog-hero.mog-hero-home {
+  min-height: 70vh;
+  padding: 6rem 1.5rem;
+  background-position: center top;
+}
+
+.mog-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.mog-hero-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  color: #f7f5f2;
+}
+@media (min-width: 800px) {
+  .mog-hero-title {
+    font-size: 3rem;
+  }
+}
+
+.mog-hero-tagline {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: white;
+  line-height: 1.6;
+}
+@media (min-width: 800px) {
+  .mog-hero-tagline {
+    font-size: 1.4rem;
+  }
+}
+
+.mog-hero-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+@media (min-width: 600px) {
+  .mog-hero-cta {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.mog-hero-cta .mog-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+.mog-hero-cta .mog-btn.mog-btn-primary {
+  background: #4a3f35;
+  color: #fff;
+}
+.mog-hero-cta .mog-btn.mog-btn-primary:hover {
+  background: rgb(44.2834645669, 37.7007874016, 31.7165354331);
+}
+.mog-hero-cta .mog-btn.mog-btn-secondary {
+  background: transparent;
+  border: 2px solid #f7f5f2;
+  color: #f7f5f2;
+}
+.mog-hero-cta .mog-btn.mog-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.mog-hero-scripture {
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+  font-style: italic;
+}
+.mog-hero-scripture p {
+  margin-bottom: 0.5rem;
+}
+.mog-hero-scripture span {
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.95rem;
+  color: #f7f5f2;
 }
 
 /* -----------------------------------------
