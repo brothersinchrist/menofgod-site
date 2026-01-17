@@ -18,7 +18,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Episodes",
-        "excerpt":"                                                                                                      Why Most Christians Get Discipleship Wrong                         January 08, 2026                                          View Episode                                                                                           Your browser does not support the audio element.                                                  Hard Men Podcast                         July 09, 2025          • Eric Conn                       Building Bands of Brothers: What This Looks Like in Ogden                         View Episode                      ","categories": [],
+        "excerpt":"                                                                                                      Why Most Christians Get Discipleship Wrong                         January 08, 2026                                          View Episode                                                                                            Your browser does not support the audio element.                                                  Hard Men Podcast                         July 09, 2025          • Eric Conn                       Building Bands of Brothers: What This Looks Like in Ogden                         View Episode                      ","categories": [],
         "tags": [],
         "url": "/menofgod-site/episodes/",
         "teaser": null
