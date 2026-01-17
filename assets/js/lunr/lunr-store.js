@@ -24,7 +24,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Men of God",
-        "excerpt":"Equipping men to lead with courage, conviction, and Christ at the center. Welcome to Men of God, a ministry built on brotherhood, family, and faith. We’re here to encourage men to stand firm, build strong homes, and walk boldly in the calling God has placed on their lives. Latest Episodes...","categories": [],
+        "excerpt":"Men of God Forging men of courage, conviction, and Christlike strength. Listen to the Latest Episode Read the Latest Articles \"Be watchful, stand firm in the faith, act like men, be strong.\" 1 Corinthians 16:13 Forging men of God through truth, brotherhood, and battle-tested faith. Men of God exists to...","categories": [],
         "tags": [],
         "url": "/menofgod-site/",
         "teaser": null
