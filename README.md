@@ -190,7 +190,7 @@ Or add scripture blocks:
 <h1>🧱 8. FRONTMATTER EXAMPLES</h1>
 These are examples of all the different types of frontmatter available for each page. 
 
-<h3>Blog Post --- Full Example Frontmatter</h3>
+<h3>BLOG-POST — Full Example Frontmatter</h3>
 
 ```
 ---
@@ -225,7 +225,7 @@ hero_cta:
 ---
 ```
 
-<h3>Episode --- Full Example Frontmatter</h3>
+<h3>EPISODE — Full Example Frontmatter</h3>
 
 ```
 ---
@@ -258,6 +258,112 @@ hero_cta:
     style: primary
   - label: Watch on YouTube
     url: "https://youtube.com/watch?v=dQw4w9WgXcQ"
+    style: secondary
+---
+```
+
+<h3>PAGE — Full Example Frontmatter</h3>
+
+```
+---
+layout: page
+title: "Our Mission"
+permalink: /mission/
+nav: true
+nav_order: 2
+
+# Hero system
+hero_enabled: true
+hero_title: "Our Mission"
+hero_subtitle: "Forging men of courage, conviction, and Christlike strength."
+hero_image: /assets/page/images/mission-hero.jpg
+
+hero_overlay_text: "We are called to build men who build families who build communities."
+hero_overlay_source: Men of God Ministry
+
+hero_scripture_text: "As iron sharpens iron, so one man sharpens another."
+hero_scripture_ref: Proverbs 27:17
+
+hero_cta:
+  - label: Join the Brotherhood
+    url: /community/
+    style: primary
+  - label: Listen to the Podcast
+    url: /episodes/
+    style: secondary
+---
+```
+
+<h3>PRODUCT — Full Example Frontmatter</h3>
+
+```
+---
+layout: product
+title: "Men of God Premium Hoodie"
+slug: men-of-god-hoodie
+publish: true
+price: 49.99
+
+cover: /assets/products/hoodie-cover.jpg
+gallery:
+  - /assets/products/hoodie-1.jpg
+  - /assets/products/hoodie-2.jpg
+  - /assets/products/hoodie-3.jpg
+
+stripe_price_id: price_1QXYZ123abc
+printful_product_id: 1234567
+printful_variant_id: 9876543
+
+summary: "A rugged, comfortable hoodie built for men who stand firm in the faith."
+
+# Full hero support for product pages too
+hero_enabled: true
+hero_title: "Men of God Hoodie"
+hero_subtitle: "Built for strength. Built for purpose."
+hero_image: /assets/products/hoodie-hero.jpg
+
+hero_overlay_text: "Wear your faith boldly."
+hero_overlay_source: Men of God Apparel
+
+hero_scripture_text: "Put on the full armor of God."
+hero_scripture_ref: Ephesians 6:11
+
+hero_cta:
+  - label: Buy Now
+    url: "#purchase"
+    style: primary
+  - label: View Size Guide
+    url: "#sizes"
+    style: secondary
+---
+```
+
+<h3>HOMEPAGE — Full Example Frontmatter</h3>
+
+```
+---
+layout: default
+title: "Men of God"
+permalink: /
+
+# Hero system
+hero_enabled: true
+hero_title: "Men of God"
+hero_subtitle: "Forging men of courage, conviction, and Christlike strength."
+hero_image: /assets/page/images/home-hero.jpg
+
+hero_overlay_text: "Be watchful, stand firm in the faith, act like men, be strong."
+hero_overlay_source: 1 Corinthians 16:13
+
+hero_scripture_text: "We are called to lead with strength and humility."
+hero_scripture_ref: Men of God Ministry
+
+hero_cta:
+  - label: Listen to the Latest Episode
+    url: /episodes/
+    style: primary
+  - label: Read the Latest Articles
+    url: /blog/
     style: secondary
 ---
 ```
