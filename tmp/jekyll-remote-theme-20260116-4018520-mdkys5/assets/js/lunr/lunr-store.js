@@ -54,7 +54,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Store",
-        "excerpt":"   Store                                                 Men of God Tee                   $29.99                   View Product                                              Men of God Tee                   $29.99                   View Product                 ","categories": [],
+        "excerpt":"   Store                                                 Man of God Mug                   $15                   View Product                                              Men of God Tee                   $29.99                   View Product                                              Men of God Tee                   $29.99                   View Product                 ","categories": [],
         "tags": [],
         "url": "/menofgod-site/store/",
         "teaser": null
@@ -2535,6 +2535,12 @@ var store = [{
         "excerpt":"This video is awesome!  You should really check it out.  ","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/14/this-is-another-test-post.html",
+        "teaser": null
+      },{
+        "title": "Man of God Mug",
+        "excerpt":"MiG for drinking delicious coffee.  ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/store/mog-man-of-god-mug/",
         "teaser": null
       },{
         "title": "Men of God Tee",
