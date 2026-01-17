@@ -53,7 +53,7 @@ var store = [{
         "url": "/menofgod-site/old-home/",
         "teaser": null
       },{
-        "title": "Store",
+        "title": "The Shop",
         "excerpt":"   Store                                                 Man of God Mug                   $15                   View Product                                              Men of God Tee                   $29.99                   View Product                                              Men's Faith Journal                   $29.99                   View Product                 ","categories": [],
         "tags": [],
         "url": "/menofgod-site/store/",
