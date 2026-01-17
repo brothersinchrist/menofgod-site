@@ -190,7 +190,7 @@ Or add scripture blocks:
 <h1>🧱 8. FRONTMATTER EXAMPLES</h1>
 These are examples of all the different types of frontmatter available for each page. 
 
-<h3>Blog Post</h3>
+<h3>Blog Post --- Full Example Frontmatter</h3>
 
 ```
 ---
@@ -221,6 +221,43 @@ hero_cta:
     style: primary
   - label: Join the Brotherhood
     url: /community/
+    style: secondary
+---
+```
+
+<h3>Episode --- Full Example Frontmatter</h3>
+
+```
+---
+layout: episode
+title: "Standing Firm in a Shifting Culture"
+date: 2026-01-17
+author: "Tom & John"
+cover: /assets/episodes/standing-firm.jpg
+summary: "How Christian men can stand strong when culture moves the goalposts."
+audio: https://cdn.menofgod.com/audio/standing-firm.mp3
+video: dQw4w9WgXcQ
+comments: true
+publish: true
+
+# Optional hero overrides
+hero_enabled: true
+hero_title: "Standing Firm in a Shifting Culture"
+hero_subtitle: "Truth doesn’t move — and neither should we."
+hero_image: /assets/episodes/standing-firm-hero.jpg
+
+hero_overlay_text: "Culture changes. Christ doesn’t."
+hero_overlay_source: Men of God
+
+hero_scripture_text: "Be watchful, stand firm in the faith, act like men, be strong."
+hero_scripture_ref: 1 Corinthians 16:13
+
+hero_cta:
+  - label: Listen Now
+    url: "#audio"
+    style: primary
+  - label: Watch on YouTube
+    url: "https://youtube.com/watch?v=dQw4w9WgXcQ"
     style: secondary
 ---
 ```
