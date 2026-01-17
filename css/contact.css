@@ -16,12 +16,13 @@
 
 .contact-card h2 {
   margin-top: 0;
-}
+} 
+*/
 
 /* ===============================
    CONTACT FORM
 ================================= */
-
+/*
 .contact-form label {
   display: block;
   margin-bottom: 1rem;
@@ -50,11 +51,11 @@
 .contact-form button {
   margin-top: 1rem;
 }
-
+*/
 /* ===============================
    SOCIAL / INFO
 ================================= */
-
+/*
 .social-links {
   display: flex;
   flex-direction: column;
@@ -97,8 +98,9 @@
 .social-links img {
   width: 18px;
   height: 18px;
-
+*/
   /* HARD LIMITS — this is the key */
+/*
   min-width: 18px;
   min-height: 18px;
   max-width: 18px;
@@ -109,8 +111,9 @@
 
   filter: invert(85%);
 }
-
+*/
 /* Modal overlay */
+/*
 .modal {
   position: fixed;
   inset: 0;
@@ -123,13 +126,16 @@
   transition: opacity .25s ease;
   z-index: 9999;
 }
+*/
 
 /* When active */
+/*
 .modal.active {
   opacity: 1;
   pointer-events: auto;
 }
-
+*/
+/*
 /* Modal card */
 .modal-content {
   background: var(--card-bg, #fff);
@@ -142,8 +148,9 @@
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   animation: fadeInUp .3s ease;
 }
-
+*/
 /* Close button */
+/*
 .modal-close {
   margin-top: 1.5rem;
   padding: .6rem 1.2rem;
@@ -157,9 +164,9 @@
 .modal-close:hover {
   background: var(--primary-dark, #1f3769);
 }
-
+*/
 /* Animation */
-@keyframes fadeInUp {
+/*@keyframes fadeInUp {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
