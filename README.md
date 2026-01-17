@@ -186,3 +186,41 @@ Or add scripture blocks:
   <span>Joshua 1:9</span>
 </div>
 ```
+
+<h1>🧱 8. FRONTMATTER EXAMPLES</h1>
+These are examples of all the different types of frontmatter available for each page. 
+
+<h3>Blog Post</h3>
+
+```
+---
+layout: blog-post
+title: "Forging Strength Through Discipline"
+date: 2026-01-17
+author: "Tom Parks"
+cover: /assets/blog/discipline.jpg
+summary: "A practical look at how discipline shapes godly men."
+comments: true
+publish: true
+
+# Optional hero overrides
+hero_enabled: true
+hero_title: "Forging Strength Through Discipline"
+hero_subtitle: "Becoming the man God calls you to be."
+hero_image: /assets/blog/discipline-hero.jpg
+
+hero_overlay_text: "Discipline is choosing what matters most over what feels good now."
+hero_overlay_source: Men of God
+
+hero_scripture_text: "For the Spirit God gave us does not make us timid, but gives us power, love and self-discipline."
+hero_scripture_ref: 2 Timothy 1:7
+
+hero_cta:
+  - label: Listen to Related Episode
+    url: /episodes/
+    style: primary
+  - label: Join the Brotherhood
+    url: /community/
+    style: secondary
+---
+```
