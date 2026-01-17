@@ -5251,9 +5251,10 @@ a:hover {
 }
 
 /* -----------------------------------------
-   HERO — MEN OF GOD SYSTEM
+   HERO — MEN OF GOD SYSTEM (Expanded)
 ----------------------------------------- */
 .mog-hero {
+  position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/assets/page/images/hero-bg.jpg") center/cover no-repeat;
   min-height: 60vh;
   display: flex;
@@ -5262,6 +5263,7 @@ a:hover {
   text-align: center;
   padding: 4rem 1.5rem;
   color: #f7f5f2;
+  overflow: hidden;
 }
 .mog-hero.mog-hero-home {
   min-height: 70vh;
@@ -5269,7 +5271,27 @@ a:hover {
   background-position: center top;
 }
 
+/* -----------------------------------------
+   HERO BACKGROUND OVERRIDE
+   Allows per-page hero images via inline style
+----------------------------------------- */
+.mog-hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+/* -----------------------------------------
+   HERO INNER CONTENT
+----------------------------------------- */
 .mog-hero-inner {
+  position: relative;
+  z-index: 2;
   max-width: 900px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -5302,6 +5324,9 @@ a:hover {
   }
 }
 
+/* -----------------------------------------
+   HERO CTA BUTTONS
+----------------------------------------- */
 .mog-hero-cta {
   display: flex;
   flex-direction: column;
@@ -5339,19 +5364,31 @@ a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.mog-hero-scripture {
-  margin-top: 2rem;
-  font-size: 1rem;
-  line-height: 1.6;
+/* -----------------------------------------
+   HERO SCRIPTURE / MISSION OVERLAY
+----------------------------------------- */
+.mog-hero-overlay {
+  margin-top: 2.5rem;
+  padding: 1.5rem 1rem;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
   font-style: italic;
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
 }
-.mog-hero-scripture p {
-  margin-bottom: 0.5rem;
+.mog-hero-overlay p {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
 }
-.mog-hero-scripture span {
+.mog-hero-overlay span {
   display: block;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: 0.95rem;
