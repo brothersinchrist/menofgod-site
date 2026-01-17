@@ -18,7 +18,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Episodes",
-        "excerpt":"                                             Why Most Christians Get Discipleship Wrong                                          Watch →                               Published: January 8, 2026                                    ","categories": [],
+        "excerpt":"                                                                                                      Why Most Christians Get Discipleship Wrong                         January 08, 2026                                          View Episode                      ","categories": [],
         "tags": [],
         "url": "/menofgod-site/episodes/",
         "teaser": null
