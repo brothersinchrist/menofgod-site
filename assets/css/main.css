@@ -5733,92 +5733,36 @@ blockquote {
 }
 
 /* -----------------------------------------
-   CONTACT PAGE
+   CONTACT WRAPPER
 ----------------------------------------- */
-.contact-grid {
+.mog-contact-wrapper {
   display: grid;
-  gap: 2rem;
+  gap: 2.5rem;
   grid-template-columns: 1fr;
-  margin: 2rem auto;
   max-width: 1100px;
+  margin: 3rem auto;
 }
-@media (min-width: 800px) {
-  .contact-grid {
+
+@media (min-width: 900px) {
+  .mog-contact-wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
-
-.contact-card {
-  background: #111;
-  border: 1px solid #222;
-  padding: 2rem;
-  border-radius: 6px;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-  width: 100%;
-  margin-top: 0.4rem;
-  padding: 0.75rem;
-  border-radius: 4px;
-  border: 1px solid #333;
-  background: #000;
-  color: #fff;
-}
-
-.contact-form button {
-  margin-top: 1rem;
-}
-
-.social-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin: 1.5rem 0;
-}
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.social-links img {
-  width: 22px;
-  height: 22px;
-}
-
-.contact-email {
-  margin: 1.5rem 0;
-  font-size: 1rem;
-}
-
-.contact-note {
-  margin-top: 1rem;
-  opacity: 0.8;
-}
-
 /* -----------------------------------------
-   CONTACT FORM (Rugged Men of God Style)
+   PANELS
 ----------------------------------------- */
-.contact-card {
+.mog-contact-panel,
+.mog-social-panel {
   background: #0e0e0e;
   border: 1px solid #1c1c1c;
   padding: 2rem;
   border-radius: 6px;
 }
 
-.contact-title {
+/* -----------------------------------------
+   HEADINGS
+----------------------------------------- */
+.mog-contact-heading {
   font-size: 1.75rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
@@ -5826,18 +5770,21 @@ blockquote {
   letter-spacing: 0.5px;
 }
 
-.contact-form {
+/* -----------------------------------------
+   FORM
+----------------------------------------- */
+.mog-contact-form {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
-.form-group {
+.mog-form-group {
   display: flex;
   flex-direction: column;
 }
 
-.form-group label {
+.mog-form-group label {
   font-weight: 700;
   margin-bottom: 0.4rem;
   font-size: 0.95rem;
@@ -5846,9 +5793,9 @@ blockquote {
   color: #ccc;
 }
 
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
+.mog-contact-form input,
+.mog-contact-form select,
+.mog-contact-form textarea {
   background: #0a0a0a;
   border: 1px solid #2a2a2a;
   padding: 0.85rem 1rem;
@@ -5858,15 +5805,21 @@ blockquote {
   transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-  border-color: #444;
-  background: #111;
+.mog-contact-form input:hover,
+.mog-contact-form select:hover,
+.mog-contact-form textarea:hover {
+  border-color: #3a3a3a;
+}
+
+.mog-contact-form input:focus,
+.mog-contact-form select:focus,
+.mog-contact-form textarea:focus {
+  border-color: #666;
+  background: #151515;
   outline: none;
 }
 
-.contact-submit {
+.mog-contact-submit {
   margin-top: 0.5rem;
   width: 100%;
   padding: 0.9rem;
@@ -5874,7 +5827,7 @@ blockquote {
   font-weight: 700;
 }
 
-.form-note {
+.mog-form-note {
   margin-top: 1rem;
   font-size: 0.9rem;
   opacity: 0.75;
@@ -5882,32 +5835,43 @@ blockquote {
 }
 
 /* Hide honeypot */
-.honeypot {
+.mog-honeypot {
   display: none !important;
 }
 
-.contact-form input:hover,
-.contact-form select:hover,
-.contact-form textarea:hover {
-  border-color: #3a3a3a;
+/* -----------------------------------------
+   SOCIAL LINKS
+----------------------------------------- */
+.mog-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
 }
 
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-  border-color: #666;
-  background: #151515;
+.mog-social-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.contact-submit:hover {
-  transform: translateY(-1px);
-  transition: transform 0.15s ease;
+.mog-social-links img {
+  width: 22px;
+  height: 22px;
+}
+
+.mog-contact-email {
+  margin: 1.5rem 0;
+  font-size: 1rem;
 }
 
 /* -----------------------------------------
    MODAL
 ----------------------------------------- */
-.modal {
+.mog-modal {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.7);
@@ -5918,11 +5882,11 @@ blockquote {
   z-index: 9999;
 }
 
-.modal.active {
+.mog-modal.active {
   display: flex;
 }
 
-.modal-content {
+.mog-modal-content {
   background: #111;
   border: 1px solid #333;
   padding: 2rem;
@@ -5932,7 +5896,7 @@ blockquote {
   text-align: center;
 }
 
-.modal-close {
+.mog-modal-close {
   margin-top: 1.5rem;
 }
 
