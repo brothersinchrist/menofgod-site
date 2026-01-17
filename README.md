@@ -167,7 +167,7 @@ $rugged-steel
 - `.mog-section`
 - `.mog-contact-*`
 
-<h3>How to use styling in content</he>
+<h3>How to use styling in content</h3>
 
 Inside CMS rich text fields, you can apply classes like:
 ```html
