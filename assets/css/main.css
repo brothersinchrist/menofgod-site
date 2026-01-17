@@ -5235,6 +5235,16 @@ a:hover {
   color: rgb(44.2834645669, 37.7007874016, 31.7165354331);
 }
 
+.mog-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/assets/page/images/hero-bg.jpg") center/cover no-repeat;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
 /* Scripture styling */
 blockquote {
   border-left: 4px solid #4a3f35;
