@@ -54,7 +54,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Store",
-        "excerpt":"⚒️ Men of God Gear Tools for the journey. Apparel with purpose. Built for men who refuse to drift. Men of God T-Shirt Price: $25 High-quality cotton t-shirt to show your support. Explore This Item → Faith Journal Price: $18 Journal for daily reflections and scripture notes. Explore This Item...","categories": [],
+        "excerpt":"   Store                                           Men of God Tee            $29.99              View Product               ","categories": [],
         "tags": [],
         "url": "/menofgod-site/store/",
         "teaser": null
@@ -2537,9 +2537,9 @@ var store = [{
         "url": "/menofgod-site/2026/01/14/this-is-another-test-post.html",
         "teaser": null
       },{
-        "title": "Men of God T-Shirt",
-        "excerpt":" ","categories": [],
+        "title": "Men of God Tee",
+        "excerpt":"A rugged, durable tee built for men who stand firm in the faith.      100% combed ring‑spun cotton   Shoulder‑to‑shoulder taping   Tear‑away label   Printed on demand via Printful  ","categories": [],
         "tags": [],
-        "url": "/menofgod-site/store/ct-shirt-01/",
+        "url": "/menofgod-site/store/ct-shirt-001/",
         "teaser": null
       }]
