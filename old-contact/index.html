@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Contact | Men of God</title>
+  <title>Contact | Men of God | Men of God</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Contact | Men of God</title>
+<title>Contact Men of God | Men of God</title>
 <meta name="generator" content="Jekyll v4.3.4" />
-<meta property="og:title" content="Contact" />
+<meta property="og:title" content="Contact Men of God" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://brothersinchrist.github.io/menofgod-site/contact/" />
-<meta property="og:url" content="https://brothersinchrist.github.io/menofgod-site/contact/" />
+<meta name="description" content="Contact us Honest conversations start with reaching out. Whether you have a question, a topic idea, or want to be a guest, we&#39;d like to hear from you." />
+<meta property="og:description" content="Contact us Honest conversations start with reaching out. Whether you have a question, a topic idea, or want to be a guest, we&#39;d like to hear from you." />
+<link rel="canonical" href="https://brothersinchrist.github.io/menofgod-site/old-contact/" />
+<meta property="og:url" content="https://brothersinchrist.github.io/menofgod-site/old-contact/" />
 <meta property="og:site_name" content="Men of God" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2026-01-17T15:10:10+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Contact" />
+<meta property="twitter:title" content="Contact Men of God" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-17T15:10:10+00:00","datePublished":"2026-01-17T15:10:10+00:00","headline":"Contact","mainEntityOfPage":{"@type":"WebPage","@id":"https://brothersinchrist.github.io/menofgod-site/contact/"},"url":"https://brothersinchrist.github.io/menofgod-site/contact/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-17T15:10:10+00:00","datePublished":"2026-01-17T15:10:10+00:00","description":"Contact us Honest conversations start with reaching out. Whether you have a question, a topic idea, or want to be a guest, we&#39;d like to hear from you.","headline":"Contact Men of God","mainEntityOfPage":{"@type":"WebPage","@id":"https://brothersinchrist.github.io/menofgod-site/old-contact/"},"url":"https://brothersinchrist.github.io/menofgod-site/old-contact/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/menofgod-site/assets/css/main.css">
   <link rel="manifest" href="/menofgod-site/assets/page/icons/site.webmanifest">
@@ -35,9 +37,11 @@
 
   <div class="mog-hero-inner">
     
-      <h1 class="mog-hero-title">Contact</h1>
+      <h1 class="mog-hero-title">Contact us</h1>
     
 
+    
+      <p class="mog-hero-tagline">Honest conversations start with reaching out.</p>
     
   </div>
 
@@ -93,100 +97,105 @@
 
   <main class="mog-main">
     <div class="mog-container">
-      <section class="mog-section mog-contact-wrapper">
+      <section class="hero" style="background: url('/menofgod-site/assets/page/images/hero-bg.jpg') center/cover no-repeat;">
+    <h1>Contact us</h1>
+    <p class="hero-statement" id="rotating-text">Honest conversations start with reaching out.</p>
+    <p class="tagline">Whether you have a question, a topic idea, or want to be a guest, we'd like to hear from you.</p>
+    
+</section>
 
-  <!-- LEFT: CONTACT FORM -->
-  <div class="mog-contact-panel">
-    <h2 class="mog-contact-heading">Send a Message</h2>
+<section class="section contact-grid">
+  <div class="contact-card card">
+    <h2>Send Us a Message</h2>
 
-    <form class="mog-contact-form" method="POST" onsubmit="return handleContactSubmit(event);">
+    <form class="contact-form" method="POST" action="#" onsubmit="return handleContactSubmit(event);">
+      <label>Name<input type="text" name="name" required="" /></label>
+      <label>Email<input type="email" name="email" required="" /></label>
 
-      <div class="mog-form-group">
-        <label for="name">Name</label>
-        <input id="name" type="text" name="name" required="" />
-      </div>
-
-      <div class="mog-form-group">
-        <label for="email">Email</label>
-        <input id="email" type="email" name="email" required="" />
-      </div>
-
-      <div class="mog-form-group">
-        <label for="subject">Subject</label>
-        <select id="subject" name="subject">
+      <label>Subject
+        <select name="subject">
           <option>General Question</option>
           <option>Topic Suggestion</option>
           <option>Guest Inquiry</option>
           <option>Media / Business</option>
         </select>
-      </div>
+      </label>
 
-      <div class="mog-form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required=""></textarea>
-      </div>
+      <label>Message<textarea name="message" rows="5" required=""></textarea></label>
 
-      <!-- Honeypot -->
-      <div class="mog-form-group mog-honeypot">
-        <label for="website">Website</label>
-        <input id="website" type="text" name="website" autocomplete="off" />
-      </div>
+      <!-- Honeypot field (hidden from humans) -->
+      <label style="display:none;">
+        Website
+        <input type="text" name="website" autocomplete="off" />
+      </label>
 
-      <button type="submit" class="mog-btn mog-btn-primary mog-contact-submit">Send Message</button>
+      <button type="submit" class="btn primary">Send Message</button>
 
-      <p class="mog-form-note">
+      <p class="form-note">
         Your message is securely processed through our serverless system.
+        We will never sell your information.
       </p>
     </form>
   </div>
 
-  <!-- RIGHT: SOCIAL LINKS -->
-  <div class="mog-social-panel">
-    <h2 class="mog-contact-heading">Connect With Us</h2>
-
-    <p class="mog-contact-intro">
-      We’re building strong men, strong families, and strong communities.
-      Join us on the platforms where we share truth, leadership, and faith.
+  <div class="contact-card card">
+    <h2>Connect With Us</h2>
+    <p>
+      Men of God is about building leaders, strengthening families,
+      and having honest conversations rooted in faith, responsibility,
+      and love of country.
     </p>
 
-    <div class="mog-social-links">
-      <a href="#" onclick="comingSoon('YouTube'); return false;">
-        <img src="/menofgod-site/assets/page/icons/youtube.svg" alt="" /> YouTube
+    <div class="social-links">
+      <a href="#" onclick="comingSoon('YouTube'); return false;" aria-label="YouTube">
+        <img src="/menofgod-site/assets/page/icons/youtube.svg" alt="" />
+        YouTube
       </a>
-      <a href="#" onclick="comingSoon('X (Twitter)'); return false;">
-        <img src="/menofgod-site/assets/page/icons/x.svg" alt="" /> X (Twitter)
+      <a href="#" onclick="comingSoon('X (Twitter)'); return false;" aria-label="X">
+        <img src="/menofgod-site/assets/page/icons/x.svg" alt="" />
+        X (Twitter)
       </a>
-      <a href="#" onclick="comingSoon('Facebook'); return false;">
-        <img src="/menofgod-site/assets/page/icons/facebook.svg" alt="" /> Facebook
+      <a href="#" onclick="comingSoon('Facebook'); return false;" aria-label="Facebook">
+        <img src="/menofgod-site/assets/page/icons/facebook.svg" alt="" />
+        Facebook
       </a>
-      <a href="#" onclick="comingSoon('Instagram'); return false;">
-        <img src="/menofgod-site/assets/page/icons/instagram.svg" alt="" /> Instagram
+      <a href="#" onclick="comingSoon('Instagram'); return false;" aria-label="Instagram">
+        <img src="/menofgod-site/assets/page/icons/instagram.svg" alt="" />
+        Instagram
       </a>
-      <a href="#" onclick="comingSoon('Rumble'); return false;">
-        <img src="/menofgod-site/assets/page/icons/rumble.svg" alt="" /> Rumble
+      <a href="#" onclick="comingSoon('Rumble'); return false;" aria-label="Rumble">
+        <img src="/menofgod-site/assets/page/icons/rumble.svg" alt="" />
+        Rumble
       </a>
     </div>
 
-    <div class="mog-contact-email">
+    <div class="contact-email">
       <strong>Email:</strong><br />
       brothersinchrist.menofgod@gmail.com
     </div>
+
+    <p class="contact-note">
+      We read every message. While we may not respond to all of them,
+      your voice matters.
+    </p>
   </div>
 
+  <div id="contact-modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <h2 id="modal-title">Message Sent</h2>
+      <p id="modal-message">Thank you for reaching out. We’ve received your message.</p>
+      <button class="modal-close" onclick="closeModal()">Close</button>
+    </div>
+  </div>
 </section>
 
-<!-- MODAL -->
-<div id="contact-modal" class="mog-modal" aria-hidden="true">
-  <div class="mog-modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <h2 id="modal-title">Message Sent</h2>
-    <p id="modal-message">Thank you for reaching out. We’ve received your message.</p>
-    <button class="mog-modal-close" onclick="closeModal()">Close</button>
-  </div>
-</div>
-
+<!-- Form logic -->
 <script>
-  function comingSoon(name) {
-    openModal("Coming Soon", `${name} is not available yet, but it’s on the way.`);
+  function comingSoon(featureName) {
+    openModal(
+      "Coming Soon",
+      `${featureName} is not available yet, but it’s on the way.`
+    );
   }
 </script>
 
@@ -199,7 +208,8 @@ function openModal(title, message) {
   modal.classList.add("active");
   modal.setAttribute("aria-hidden", "false");
 
-  document.querySelector(".mog-modal-close").focus();
+  // Trap focus inside modal
+  document.querySelector(".modal-close").focus();
 }
 
 function closeModal() {
@@ -208,10 +218,12 @@ function closeModal() {
   modal.setAttribute("aria-hidden", "true");
 }
 
+/* Close on Escape */
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeModal();
 });
 
+/* Close when clicking outside the card */
 document.addEventListener("click", (e) => {
   const modal = document.getElementById("contact-modal");
   if (e.target === modal) closeModal();
@@ -230,8 +242,17 @@ async function handleContactSubmit(e) {
     email: data.get("email"),
     subject: data.get("subject"),
     message: data.get("message"),
-    website: data.get("website")
+    website: data.get("website") // honeypot
   };
+
+  const debugOutput = document.getElementById("debug-output");
+  function log(msg) {
+    console.log(msg);
+    if (debugOutput) debugOutput.textContent += msg + "\n";
+  }
+
+  log("Submitting contact form:");
+  log(JSON.stringify(payload, null, 2));
 
   try {
     const res = await fetch(
@@ -243,14 +264,21 @@ async function handleContactSubmit(e) {
       }
     );
 
+    const text = await res.text();
+    log(`Response status: ${res.status}`);
+    log("Response body: " + text);
+
     if (res.ok) {
       openModal("Message Sent", "Thanks for reaching out. We’re grateful for your message and will follow up soon.");
       form.reset();
+      log("Form submitted successfully.");
     } else {
       alert("There was a problem sending your message.");
+      log("Form submission failed.");
     }
   } catch (err) {
     console.error(err);
+    log("Fetch error: " + err);
     alert("Unexpected error occurred. Check console/debug panel.");
   }
 
