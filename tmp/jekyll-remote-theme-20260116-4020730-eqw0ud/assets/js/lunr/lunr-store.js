@@ -23,7 +23,7 @@ var store = [{
         "url": "/menofgod-site/contact/success/",
         "teaser": null
       },{
-        "title": "Contact | Men of God",
+        "title": "Contact Us",
         "excerpt":"Send Us a Message Name Email Subject General Question Topic Suggestion Guest Inquiry Media / Business Message Website Send Message Your message is securely processed through our serverless system. We will never sell your information. Connect With Us Men of God is about building leaders, strengthening families, and having honest...","categories": [],
         "tags": [],
         "url": "/menofgod-site/contact/",
