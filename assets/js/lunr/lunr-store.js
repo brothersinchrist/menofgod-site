@@ -54,7 +54,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Store",
-        "excerpt":"   Store                                                 Men of God Tee                   $29.99                   View Product                 ","categories": [],
+        "excerpt":"   Store                                                 Men of God Tee                   $29.99                   View Product                                              Men of God Tee                   $29.99                   View Product                 ","categories": [],
         "tags": [],
         "url": "/menofgod-site/store/",
         "teaser": null
@@ -2541,5 +2541,11 @@ var store = [{
         "excerpt":"A rugged, durable tee built for men who stand firm in the faith.      100% combed ring‑spun cotton   Shoulder‑to‑shoulder taping   Tear‑away label   Printed on demand via Printful  ","categories": [],
         "tags": [],
         "url": "/menofgod-site/store/ct-shirt-001/",
+        "teaser": null
+      },{
+        "title": "Men of God Tee",
+        "excerpt":"This rugged tee is built for men who refuse to settle for comfort when they’re called to courage.      100% combed ring‑spun cotton   Shoulder‑to‑shoulder taping   Tear‑away label   Printed on demand via Printful  ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/store/mog-tee-001/",
         "teaser": null
       }]
