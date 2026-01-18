@@ -6518,6 +6518,21 @@ blockquote {
 }
 
 /* -----------------------------------------
+   CONTACT PAGE SECTION WRAPPER
+----------------------------------------- */
+.mog-section-contact {
+  padding: 3rem 0;
+  margin: 3rem 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.08);
+}
+@media (max-width: 768px) {
+  .mog-section-contact {
+    padding: 2rem 0;
+    margin: 2rem 0;
+  }
+}
+
+/* -----------------------------------------
    SOCIAL LINKS
 ----------------------------------------- */
 .mog-social-links {
