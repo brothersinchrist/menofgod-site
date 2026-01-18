@@ -6,7 +6,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Blog",
-        "excerpt":"Faithful Stewards of Gods Grace January 13, 2026 • DeShun Bland The Lord Jesus is full of Grace and truth, and by his blood we have been made new so let us buy faith in Christ walk in the newness that he has given us in obedience Trust and Obey...","categories": [],
+        "excerpt":"Why Strong Men Build Strong Families January 18, 2026 • Tom Parks Biblical leadership starts at home. Here’s why it matters more than ever. Faithful Stewards of Gods Grace January 13, 2026 • DeShun Bland The Lord Jesus is full of Grace and truth, and by his blood we have...","categories": [],
         "tags": [],
         "url": "/menofgod-site/blog/",
         "teaser": null
@@ -2526,7 +2526,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Why Strong Men Build Strong Families",
-        "excerpt":"Strong families don’t happen by accident. Scripture places the responsibility of leadership squarely on men — not as tyrants, but as servants. When men lead with humility, courage, and faith, families flourish. This leadership starts at home long before it ever reaches the church or the nation. “But as for...","categories": [],
+        "excerpt":"Strong families don’t happen by accident. Scripture places the responsibility of leadership squarely on men — not as tyrants, but as servants. When men lead with humility, courage, and faith, families flourish. This leadership starts at home long before it ever reaches the church or the nation. This is why...","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/18/why-strong-men-build-strong-families.html",
         "teaser": null
