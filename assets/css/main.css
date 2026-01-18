@@ -5251,6 +5251,13 @@ a:hover {
 }
 
 /* -----------------------------------------
+   GENERIC SECTION WRAPPER
+----------------------------------------- */
+.mog-section {
+  padding: 3rem 0;
+}
+
+/* -----------------------------------------
    HERO — MEN OF GOD SYSTEM (Expanded)
 ----------------------------------------- */
 .mog-hero {
@@ -6333,6 +6340,17 @@ blockquote {
 /* -----------------------------------------
    CONTACT PAGE — MEN OF GOD STYLE
 ----------------------------------------- */
+/* -----------------------------------------
+   CONTACT INTRO TEXT
+----------------------------------------- */
+.mog-contact-intro {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
 .mog-contact-wrapper {
   display: grid;
   gap: 2.5rem;
@@ -6513,6 +6531,15 @@ blockquote {
   background: rgb(44.2834645669, 37.7007874016, 31.7165354331);
 }
 
+@media (max-width: 900px) {
+  .mog-contact-wrapper {
+    margin: 2rem auto;
+  }
+  .mog-contact-panel,
+  .mog-social-panel {
+    padding: 1.5rem;
+  }
+}
 /* -----------------------------------------
    PULL QUOTES
    ----------------------------------------- */
