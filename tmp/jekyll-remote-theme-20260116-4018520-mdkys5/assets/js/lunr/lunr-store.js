@@ -41,6 +41,12 @@ var store = [{
         "url": "/menofgod-site/",
         "teaser": null
       },{
+        "title": "Partner Organizations",
+        "excerpt":"Partner Organizations   These are the ministries, networks, and organizations we stand alongside.           ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/partners/",
+        "teaser": null
+      },{
         "title": "The Shop",
         "excerpt":"    Check out our gear                                                 Man of God Mug                   $15                   View Product                                              Men of God Tee                   $29.99                   View Product                                              Men's Faith Journal                   $29.99                   View Product                 ","categories": [],
         "tags": [],
