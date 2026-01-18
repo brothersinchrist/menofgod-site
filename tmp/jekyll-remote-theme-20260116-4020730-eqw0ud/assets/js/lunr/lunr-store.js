@@ -2453,12 +2453,6 @@ var store = [{
         "url": "/menofgod-site/2026/01/07/first-post.html",
         "teaser": null
       },{
-        "title": "Why Strong Men Build Strong Families",
-        "excerpt":"Strong families don’t happen by accident. Scripture places the responsibility of leadership squarely on men — not as tyrants, but as servants. When men lead with humility, courage, and faith, families flourish. This leadership starts at home long before it ever reaches the church or the nation. “But as for...","categories": [],
-        "tags": [],
-        "url": "/menofgod-site/2026/01/07/why-strong-men-build-strong-families.html",
-        "teaser": null
-      },{
         "title": "First episode!",
         "excerpt":"This video is awesome!  You should really check it out.  ","categories": [],
         "tags": [],
@@ -2529,6 +2523,12 @@ var store = [{
         "excerpt":"Example content  ","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/17/example-youtube-episode.html",
+        "teaser": null
+      },{
+        "title": "Why Strong Men Build Strong Families",
+        "excerpt":"Strong families don’t happen by accident. Scripture places the responsibility of leadership squarely on men — not as tyrants, but as servants. When men lead with humility, courage, and faith, families flourish. This leadership starts at home long before it ever reaches the church or the nation. “But as for...","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/2026/01/18/why-strong-men-build-strong-families.html",
         "teaser": null
       },{
         "title": "Man of God Mug",
