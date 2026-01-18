@@ -42,7 +42,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Partner Organizations",
-        "excerpt":"Partner Organizations   These are the ministries, networks, and organizations we stand alongside.                                              Caring Solutions              Hope Offered. Futures Changed.                            Visit Website                                                        Samaritan's Purse              Samaritan's Purse brings physical relief and the hope of the Gospel to hurting people around the world.                            Visit Website                     ","categories": [],
+        "excerpt":"Partner Organizations These are the ministries, networks, and organizations we stand alongside. Caring Solutions Hope Offered. Futures Changed. Visit Website Samaritan's Purse Samaritan's Purse brings physical relief and the hope of the Gospel to hurting people around the world. Visit Website The Salvation Army - Warner Robins Corp Wherever there...","categories": [],
         "tags": [],
         "url": "/menofgod-site/partners/",
         "teaser": null
@@ -75,6 +75,12 @@ var store = [{
         "excerpt":" ","categories": [],
         "tags": [],
         "url": "/menofgod-site/partners/samaritans-purse/",
+        "teaser": null
+      },{
+        "title": "The Salvation Army - Warner Robins Corp",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/partners/the-salvation-army-warner-robins-corp/",
         "teaser": null
       },{
         "title": "Edge Case: Nested and Mixed Lists",
