@@ -5638,6 +5638,66 @@ blockquote {
   }
 }
 /* -----------------------------------------
+   HOMEPAGE SECTIONS — LATEST EPISODES / POSTS
+----------------------------------------- */
+.mog-section-latest-episodes,
+.mog-section-latest-posts {
+  padding: 3rem 0;
+  margin: 3rem 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Section heading */
+.mog-section-latest-episodes h2,
+.mog-section-latest-posts h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.75rem;
+  color: #f7f5f2;
+}
+
+/* Section footer (View All button) */
+.mog-section-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+.mog-section-footer .mog-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* -----------------------------------------
+   GRID ALIGNMENT
+----------------------------------------- */
+.mog-section-latest-episodes .mog-episodes-grid,
+.mog-section-latest-posts .mog-blog-grid {
+  margin-top: 1rem;
+}
+
+/* -----------------------------------------
+   RESPONSIVE TWEAKS
+----------------------------------------- */
+@media (max-width: 768px) {
+  .mog-section-latest-episodes,
+  .mog-section-latest-posts {
+    padding: 2rem 0;
+    margin: 2rem 0;
+  }
+  .mog-section-latest-episodes h2,
+  .mog-section-latest-posts h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .mog-section-footer {
+    margin-top: 1.5rem;
+  }
+}
+/* -----------------------------------------
    BLOG INDEX
    ----------------------------------------- */
 .mog-blog-index {
