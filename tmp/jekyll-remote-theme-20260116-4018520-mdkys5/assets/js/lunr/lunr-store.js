@@ -41,12 +41,6 @@ var store = [{
         "url": "/menofgod-site/",
         "teaser": null
       },{
-        "title": "Home",
-        "excerpt":"Men of God Men called to lead their families and serve their country. Honest conversations between Christian men - fathers, husbands, and patriots - growing as leaders under God for their families and communities. Your Hosts DeShun Husband, father of five, and active in his church. Living with faith, integrity,...","categories": [],
-        "tags": [],
-        "url": "/menofgod-site/old-home/",
-        "teaser": null
-      },{
         "title": "The Shop",
         "excerpt":"    Check out our gear                                                 Man of God Mug                   $15                   View Product                                              Men of God Tee                   $29.99                   View Product                                              Men's Faith Journal                   $29.99                   View Product                 ","categories": [],
         "tags": [],
