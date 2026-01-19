@@ -5904,6 +5904,12 @@ h1, h2, h3 {
     transform: translateY(0);
   }
 }
+.mog-theme-toggle {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
 /* -----------------------------------------
    HERO — MEN OF GOD SYSTEM
 ----------------------------------------- */
