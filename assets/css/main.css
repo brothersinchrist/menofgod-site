@@ -6280,6 +6280,110 @@ h1, h2, h3 {
 }
 
 /* -----------------------------------------
+   MEN OF GOD — FOOTER
+----------------------------------------- */
+.mog-footer {
+  background: var(--card-bg);
+  border-top: 4px solid var(--accent);
+  padding: 3rem 1.5rem;
+  color: var(--text-color);
+  margin-top: 4rem;
+}
+
+.mog-footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 800px) {
+  .mog-footer-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* -----------------------------------------
+   FOOTER SECTIONS
+----------------------------------------- */
+.mog-footer-section h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.mog-footer-section p,
+.mog-footer-section a {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  opacity: 0.9;
+}
+
+.mog-footer-section a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+.mog-footer-section a:hover {
+  color: var(--accent);
+}
+
+/* -----------------------------------------
+   SOCIAL LINKS
+----------------------------------------- */
+.mog-footer-social {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.mog-footer-social a img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0.9);
+  transition: filter 0.2s ease;
+}
+.mog-footer-social a img:hover {
+  filter: brightness(1.2);
+}
+
+/* -----------------------------------------
+   BOTTOM BAR
+----------------------------------------- */
+.mog-footer-bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--card-border);
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.mog-footer-bottom a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+.mog-footer-bottom a:hover {
+  color: var(--accent);
+}
+
+/* -----------------------------------------
+   DARK MODE ENHANCEMENTS
+----------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .mog-footer {
+    background: var(--card-bg);
+  }
+}
+:root[data-theme=dark] .mog-footer {
+  background: var(--card-bg);
+}
+
+/* -----------------------------------------
    PAGE LAYOUTS
 ----------------------------------------- */
 /* -----------------------------------------
