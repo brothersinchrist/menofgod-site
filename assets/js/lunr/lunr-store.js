@@ -6,7 +6,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Blog",
-        "excerpt":"Why Strong Men Build Strong Families January 18, 2026 • Tom Parks Biblical leadership starts at home. Here’s why it matters more than ever. Faithful Stewards of Gods Grace January 13, 2026 • DeShun Bland The Lord Jesus is full of Grace and truth, and by his blood we have...","categories": [],
+        "excerpt":"Why Strong Men Build Strong Families January 18, 2026 • Tom Parks Biblical leadership starts at home. Here’s why it matters more than ever. The Lord is My portion! January 18, 2026 • Tom Parks When God calls us to step out in faith, He proves Himself to be our...","categories": [],
         "tags": [],
         "url": "/menofgod-site/blog/",
         "teaser": null
@@ -2513,12 +2513,6 @@ var store = [{
         "url": "/menofgod-site/2026/01/08/lets-test-out-our-blog-posts-from-cms.html",
         "teaser": null
       },{
-        "title": "The Lord is My portion!",
-        "excerpt":"Luke 9:2-3 ESV [2] and he sent them out to proclaim the kingdom of God and to heal. [3] And he said to them, “Take nothing for your journey, no staff, nor bag, nor bread, nor money; and do not have two tunics.” He is enough! This verse was describing...","categories": [],
-        "tags": [],
-        "url": "/menofgod-site/2026/01/08/the-lord-is-my-portion.html",
-        "teaser": null
-      },{
         "title": "Why Most Christians Get Discipleship Wrong",
         "excerpt":"In this challenging message from Pastor Josh Howerton, we start the new year with training that matters: How to be a disciple. True discipleship doesn’t begin with your effort, it begins with trusting in what Christ has already done. Through the Bible, we see that our debt is fully paid,...","categories": [],
         "tags": [],
@@ -2565,6 +2559,12 @@ var store = [{
         "excerpt":"Strong families don’t happen by accident. Scripture places the responsibility of leadership squarely on men — not as tyrants, but as servants. When men lead with humility, courage, and faith, families flourish. This leadership starts at home long before it ever reaches the church or the nation. This is why...","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/18/why-strong-men-build-strong-families.html",
+        "teaser": null
+      },{
+        "title": "The Lord is My portion!",
+        "excerpt":"Luke 9:2-3 ESV [2] and he sent them out to proclaim the kingdom of God and to heal. [3] And he said to them, “Take nothing for your journey, no staff, nor bag, nor bread, nor money; and do not have two tunics.” He is enough! This verse was describing...","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/2026/01/18/the-lord-is-my-portion.html",
         "teaser": null
       },{
         "title": "Man of God Mug",
