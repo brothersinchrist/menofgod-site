@@ -5785,22 +5785,22 @@ h1, h2, h3 {
    STRUCTURAL SECTIONS
 ----------------------------------------- */
 /* -----------------------------------------
-   NAV BAR — FULL WIDTH + RUGGED
+   HEADER — RUGGED + RESPONSIVE + THEME-AWARE
 ----------------------------------------- */
 .mog-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: transparent;
+  background: var(--page-bg);
   border-bottom: 4px solid transparent;
   z-index: 9999;
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .mog-header.scrolled {
-  background: #000;
-  border-bottom-color: #4a3f35;
+  background: var(--card-bg);
+  border-bottom-color: var(--accent);
 }
 
 .mog-header-inner {
@@ -5811,29 +5811,75 @@ h1, h2, h3 {
   width: 100%;
 }
 
-/* Logo */
+/* -----------------------------------------
+   LOGO
+----------------------------------------- */
 .mog-logo-text {
   font-size: 1.4rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   letter-spacing: 1px;
 }
 
-/* Desktop Nav */
+/* -----------------------------------------
+   RIGHT SIDE (Toggle + Hamburger)
+----------------------------------------- */
+.mog-header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* -----------------------------------------
+   DESKTOP NAV
+----------------------------------------- */
 .mog-nav {
   display: flex;
   gap: 1.5rem;
 }
 
 .mog-nav a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 .mog-nav a:hover {
-  color: #4a3f35;
+  color: var(--accent);
+}
+
+/* -----------------------------------------
+   THEME TOGGLE (Header Version)
+----------------------------------------- */
+.mog-theme-toggle {
+  display: flex;
+  gap: 0.5rem;
+  border-left: 1px solid var(--card-border);
+  padding-left: 1rem;
+}
+
+.mog-theme-btn {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-color);
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.mog-theme-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent);
+}
+.mog-theme-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
 }
 
 /* -----------------------------------------
@@ -5844,13 +5890,12 @@ h1, h2, h3 {
   flex-direction: column;
   gap: 6px;
   cursor: pointer;
-  z-index: 10000;
 }
 
 .mog-nav-toggle span {
   width: 28px;
   height: 3px;
-  background: #fff;
+  background: var(--text-color);
   transition: 0.3s ease;
 }
 
@@ -5867,7 +5912,9 @@ h1, h2, h3 {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-/* Mobile Menu */
+/* -----------------------------------------
+   MOBILE MENU
+----------------------------------------- */
 @media (max-width: 768px) {
   .mog-nav {
     display: none;
@@ -5876,9 +5923,9 @@ h1, h2, h3 {
     left: 0;
     width: 100%;
     flex-direction: column;
-    background: #111;
-    border-top: 1px solid #222;
-    border-bottom: 1px solid #222;
+    background: var(--card-bg);
+    border-top: 1px solid var(--card-border);
+    border-bottom: 1px solid var(--card-border);
     padding: 1rem 0;
     animation: mogSlideDown 0.3s ease forwards;
   }
@@ -5892,6 +5939,13 @@ h1, h2, h3 {
   .mog-nav-toggle {
     display: flex;
   }
+  /* Move theme toggle INTO the mobile menu */
+  .mog-theme-toggle {
+    border-left: none;
+    padding-left: 0;
+    margin: 1rem 1.5rem 0;
+    justify-content: flex-start;
+  }
 }
 /* Slide-down animation */
 @keyframes mogSlideDown {
@@ -5904,12 +5958,6 @@ h1, h2, h3 {
     transform: translateY(0);
   }
 }
-.mog-theme-toggle {
-  border-left: 1px solid rgba(255, 255, 255, 0.15);
-  padding-left: 1rem;
-  margin-left: 1rem;
-}
-
 /* -----------------------------------------
    HERO — MEN OF GOD SYSTEM
 ----------------------------------------- */
