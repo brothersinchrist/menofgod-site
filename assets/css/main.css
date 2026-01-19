@@ -6345,6 +6345,38 @@ h1, h2, h3 {
 }
 
 /* -----------------------------------------
+   FOOTER NAVIGATION
+----------------------------------------- */
+.mog-footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.mog-footer-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  opacity: 0.85;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+.mog-footer-nav a:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
+.mog-footer-nav a {
+  padding-left: 0.25rem;
+  border-left: 2px solid transparent;
+}
+.mog-footer-nav a:hover {
+  border-left-color: var(--accent);
+}
+
+/* -----------------------------------------
    SOCIAL LINKS
 ----------------------------------------- */
 .mog-footer-social {
