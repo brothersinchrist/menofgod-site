@@ -59,12 +59,6 @@ var store = [{
         "url": "/menofgod-site/partners/caring-solutions/",
         "teaser": null
       },{
-        "title": "Strong Fathers Ministry",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "/menofgod-site/partners/example1/",
-        "teaser": null
-      },{
         "title": "Samaritan's Purse",
         "excerpt":" ","categories": [],
         "tags": [],
