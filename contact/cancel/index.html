@@ -14,11 +14,11 @@
 <meta property="og:url" content="https://brothersinchrist.github.io/menofgod-site/contact/cancel/" />
 <meta property="og:site_name" content="Men of God" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-01-19T15:24:26+00:00" />
+<meta property="article:published_time" content="2026-01-19T15:27:38+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Message Not Sent" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-19T15:24:26+00:00","datePublished":"2026-01-19T15:24:26+00:00","description":"Message Not Sent Your message was not submitted. You can try again below.","headline":"Message Not Sent","mainEntityOfPage":{"@type":"WebPage","@id":"https://brothersinchrist.github.io/menofgod-site/contact/cancel/"},"url":"https://brothersinchrist.github.io/menofgod-site/contact/cancel/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-19T15:27:38+00:00","datePublished":"2026-01-19T15:27:38+00:00","description":"Message Not Sent Your message was not submitted. You can try again below.","headline":"Message Not Sent","mainEntityOfPage":{"@type":"WebPage","@id":"https://brothersinchrist.github.io/menofgod-site/contact/cancel/"},"url":"https://brothersinchrist.github.io/menofgod-site/contact/cancel/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/menofgod-site/assets/css/main.css">
   <link rel="manifest" href="/menofgod-site/assets/page/icons/site.webmanifest">
@@ -219,24 +219,11 @@
 </script>
 <script>
   const root = document.documentElement;
-  const saved = localStorage.getItem("theme");
+  const toggleBtn = document.getElementById("themeToggle");
+  const themes = ["light", "dark", "system"];
+  let currentTheme = localStorage.getItem("theme") || "system";
 
-  function updateActiveButton(theme) {
-    document.querySelectorAll(".mog-theme-btn").forEach(btn =>
-      btn.classList.remove("active")
-    );
-    const activeBtn = document.getElementById(`theme-${theme}`);
-    if (activeBtn) activeBtn.classList.add("active");
-  }
-
-  if (saved) {
-    root.setAttribute("data-theme", saved);
-    updateActiveButton(saved);
-  } else {
-    updateActiveButton("system");
-  }
-
-  function setTheme(theme) {
+  function applyTheme(theme) {
     if (theme === "system") {
       root.removeAttribute("data-theme");
       localStorage.removeItem("theme");
@@ -244,8 +231,16 @@
       root.setAttribute("data-theme", theme);
       localStorage.setItem("theme", theme);
     }
-    updateActiveButton(theme);
+    toggleBtn.textContent = `Theme: ${theme.charAt(0).toUpperCase() + theme.slice(1)}`;
   }
+
+  function cycleTheme() {
+    const nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
+    currentTheme = themes[nextIndex];
+    applyTheme(currentTheme);
+  }
+
+  applyTheme(currentTheme);
 </script>
 </body>
 </html>

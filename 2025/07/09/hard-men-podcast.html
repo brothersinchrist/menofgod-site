@@ -304,24 +304,11 @@
 </script>
 <script>
   const root = document.documentElement;
-  const saved = localStorage.getItem("theme");
+  const toggleBtn = document.getElementById("themeToggle");
+  const themes = ["light", "dark", "system"];
+  let currentTheme = localStorage.getItem("theme") || "system";
 
-  function updateActiveButton(theme) {
-    document.querySelectorAll(".mog-theme-btn").forEach(btn =>
-      btn.classList.remove("active")
-    );
-    const activeBtn = document.getElementById(`theme-${theme}`);
-    if (activeBtn) activeBtn.classList.add("active");
-  }
-
-  if (saved) {
-    root.setAttribute("data-theme", saved);
-    updateActiveButton(saved);
-  } else {
-    updateActiveButton("system");
-  }
-
-  function setTheme(theme) {
+  function applyTheme(theme) {
     if (theme === "system") {
       root.removeAttribute("data-theme");
       localStorage.removeItem("theme");
@@ -329,8 +316,16 @@
       root.setAttribute("data-theme", theme);
       localStorage.setItem("theme", theme);
     }
-    updateActiveButton(theme);
+    toggleBtn.textContent = `Theme: ${theme.charAt(0).toUpperCase() + theme.slice(1)}`;
   }
+
+  function cycleTheme() {
+    const nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
+    currentTheme = themes[nextIndex];
+    applyTheme(currentTheme);
+  }
+
+  applyTheme(currentTheme);
 </script>
 </body>
 </html>
