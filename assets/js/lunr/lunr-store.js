@@ -2590,4 +2590,10 @@ var store = [{
         "tags": [],
         "url": "/menofgod-site/about/03-hosts/",
         "teaser": null
+      },{
+        "title": "Our Partners",
+        "excerpt":"               View All Partners     ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/about/04-partners/",
+        "teaser": null
       }]
