@@ -6145,6 +6145,96 @@ h1, h2, h3 {
 }
 
 /* -----------------------------------------
+   MISSION SECTION — RUGGED + THEME-AWARE
+----------------------------------------- */
+.mog-mission-section {
+  padding: 4rem 1.5rem;
+  background: var(--page-bg);
+  color: var(--text-color);
+}
+
+.mog-mission-section .mog-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* -----------------------------------------
+   TAGLINE
+----------------------------------------- */
+.mog-mission-tagline {
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  opacity: 0.95;
+}
+
+/* -----------------------------------------
+   BODY TEXT
+----------------------------------------- */
+.mog-mission-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+.mog-mission-body p + p {
+  margin-top: 1.25rem;
+}
+
+/* -----------------------------------------
+   SCRIPTURE BLOCK
+----------------------------------------- */
+.mog-mission-scripture {
+  background: var(--card-bg);
+  border-left: 4px solid var(--accent);
+  padding: 1.75rem 2rem;
+  border-radius: 6px;
+  font-style: italic;
+  position: relative;
+  color: var(--text-color);
+  line-height: 1.65;
+}
+
+.mog-mission-scripture p {
+  margin: 0;
+}
+
+.mog-mission-reference {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+  text-align: right;
+}
+
+/* Optional grit overlay */
+.mog-mission-scripture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/page/textures/grit.png");
+  opacity: 0.08;
+  pointer-events: none;
+  border-radius: 6px;
+}
+
+/* -----------------------------------------
+   RESPONSIVE TWEAKS
+----------------------------------------- */
+@media (max-width: 600px) {
+  .mog-mission-tagline {
+    font-size: 1.2rem;
+  }
+  .mog-mission-scripture {
+    padding: 1.5rem 1.25rem;
+  }
+}
+/* -----------------------------------------
    GENERIC SECTIONS
 ----------------------------------------- */
 .mog-section {
