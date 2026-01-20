@@ -5972,13 +5972,6 @@ h1, h2, h3 {
   .mog-nav-toggle {
     display: flex;
   }
-  /* Move theme toggle INTO the mobile menu */
-  .mog-theme-toggle {
-    border-left: none;
-    padding-left: 0;
-    margin: 1rem 1.5rem 0;
-    justify-content: flex-start;
-  }
 }
 /* Slide-down animation */
 @keyframes mogSlideDown {
