@@ -288,15 +288,13 @@
   let currentTheme = localStorage.getItem("theme") || "system";
 
   function applyTheme(theme) {
-    if (theme === "system") {
-      root.removeAttribute("data-theme");
-      localStorage.removeItem("theme");
-    } else {
-      root.setAttribute("data-theme", theme);
-      localStorage.setItem("theme", theme);
-    }
-    toggleBtn.textContent = `Theme: ${theme.charAt(0).toUpperCase() + theme.slice(1)}`;
-  }
+  const iconMap = {
+    light: "sun.svg",
+    dark: "moon.svg",
+    system: "gear.svg"
+  };
+  toggleBtn.innerHTML = `<img src="${iconMap[theme]}" alt="${theme} mode" />`;
+}
 
   function cycleTheme() {
     const nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
