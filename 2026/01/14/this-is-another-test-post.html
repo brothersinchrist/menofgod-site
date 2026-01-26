@@ -27,51 +27,57 @@
 <body class="mog-body">
 
   
-    
-
-
-
-
-<div class="mog-hero" style="background-image:
-  linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-  url('/menofgod-site/assets/uploads/images/20251220_140530.jpg');">
-
-  <div class="mog-hero-inner">
-
-    
-      <h1 class="mog-hero-title">Test Post 2</h1>
-    
-
-    
-      <p class="mog-hero-tagline">This is an episode</p>
-    
-
-    
-
-    
-
-    
-
-  </div>
-</div>
-
   
 
   <header class="mog-header">
   <div class="mog-header-inner">
 
+    <!-- Mobile nav toggle (LEFT) -->
+    <button
+      class="mog-nav-toggle"
+      id="mogNavToggle"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="mogNav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Logo (CENTER-ish) -->
     <a href="/menofgod-site/" class="mog-logo">
       <span class="mog-logo-text">MEN OF GOD</span>
     </a>
 
+    <!-- Theme toggle (RIGHT) -->
     <div class="mog-header-right">
-      <div class="mog-nav-toggle" id="mogNavToggle">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="mog-theme-dropdown">
+        <button class="mog-theme-toggle-btn" id="themeToggleBtn">
+          <img id="themeIcon" src="/menofgod-site/assets/page/icons/gear.svg" alt="">
+          <span id="themeLabel">System</span>
+        </button>
+
+        <ul class="mog-theme-menu" id="themeMenu">
+          <li data-theme="light">
+            <img src="/menofgod-site/assets/page/icons/sun.svg" alt="">
+            Light theme
+          </li>
+
+          <li data-theme="dark">
+            <img src="/menofgod-site/assets/page/icons/moon.svg" alt="">
+            Dark theme
+          </li>
+
+          <li data-theme="system">
+            <img src="/menofgod-site/assets/page/icons/gear.svg" alt="">
+            Device theme
+          </li>
+        </ul>
       </div>
     </div>
 
+    <!-- Navigation -->
     <nav class="mog-nav" id="mogNav">
       
       
@@ -99,15 +105,11 @@
           <a href="/menofgod-site/contact/">Contact</a>
         
       
-
-      <!-- Theme toggle lives here visually -->
-      <button class="mog-theme-toggle-btn" onclick="cycleTheme()" id="themeToggle">
-        <img src="/menofgod-site/assets/page/icons/sun.svg" alt="Light mode">
-      </button>
     </nav>
 
   </div>
 </header>
+
 
   <main class="mog-main">
     <div class="mog-container">
@@ -144,55 +146,111 @@
     
   </header>
   <div class="mog-episode-platforms">
-  <a href="#" class="platform spotify">Spotify</a>
-  <a href="#" class="platform apple">Apple</a>
-  <a href="#" class="platform youtube">YouTube</a>
-  <a href="#" class="platform rss">RSS</a>
+
+  
+
+  
+
+  
+
+  
+
 </div>
+
   <div class="mog-episode-body">
     <h1 id="this-video-is-awesome">This video is awesome!</h1>
 <p>You should really check it out.</p>
 
   </div>
 
-  <div class="mog-share-bar">
-  <span class="mog-share-label">Share this post:</span>
+  
 
-  <!-- X / Twitter -->
-  <a
-    class="mog-share-btn"
-    href="https://twitter.com/intent/tweet?url=https://brothersinchrist.github.io/menofgod-site/2026/01/14/this-is-another-test-post.html&text=Test%20Post%202"
-    target="_blank" rel="noopener"
-  >
-    X
-  </a>
 
-  <!-- Facebook -->
-  <a
-    class="mog-share-btn"
-    href="https://www.facebook.com/sharer/sharer.php?u=https://brothersinchrist.github.io/menofgod-site/2026/01/14/this-is-another-test-post.html"
-    target="_blank" rel="noopener"
-  >
-    Facebook
-  </a>
 
-  <!-- Email -->
-  <a
-    class="mog-share-btn"
-    href="mailto:?subject=Test%20Post%202&body=https://brothersinchrist.github.io/menofgod-site/2026/01/14/this-is-another-test-post.html"
-  >
-    Email
-  </a>
+<div class="mog-share-bar">
+  <span class="mog-share-label">Share this:</span>
+
+  
+    <a
+      class="mog-share-btn"
+      href="https://twitter.com/intent/tweet?url=https://brothersinchrist.github.io/menofgod-site/2026/01/14/this-is-another-test-post.html&text=Test%20Post%202"
+      target="_blank" rel="noopener"
+    >
+      X
+    </a>
+  
+
+  
+    <a
+      class="mog-share-btn"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://brothersinchrist.github.io/menofgod-site/2026/01/14/this-is-another-test-post.html"
+      target="_blank" rel="noopener"
+    >
+      Facebook
+    </a>
+  
+
+  
+    <a
+      class="mog-share-btn"
+      href="https://www.linkedin.com/sharing/share-offsite/?url=https://brothersinchrist.github.io/menofgod-site/2026/01/14/this-is-another-test-post.html"
+      target="_blank" rel="noopener"
+    >
+      LinkedIn
+    </a>
+  
+
+  
+    <a
+      class="mog-share-btn"
+      href="mailto:?subject=Test%20Post%202&body=https://brothersinchrist.github.io/menofgod-site/2026/01/14/this-is-another-test-post.html"
+    >
+      Email
+    </a>
+  
+
+  
+    <button class="mog-share-btn mog-share-copy" data-copy="https://brothersinchrist.github.io/menofgod-site/2026/01/14/this-is-another-test-post.html">
+      Copy Link
+    </button>
+  
 </div>
+
+<script>
+document.addEventListener("click", function(e) {
+  if (e.target.matches(".mog-share-copy")) {
+    navigator.clipboard.writeText(e.target.dataset.copy);
+    e.target.textContent = "Copied!";
+    setTimeout(() => e.target.textContent = "Copy Link", 1500);
+  }
+});
+</script>
+
   
-    <div class="page__comments">
-  
-  
-</div>
+    
+<section id="comments" style="margin-top: 3rem;">
+    <script src="https://giscus.app/client.js"
+            data-repo="brothersinchrist/menofgod-site"
+            data-repo-id="R_kgDOQzzv9A"
+            data-category="Blog Comments"
+        data-category-id="DIC_kwDOQzzv9M4C0vrd"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+    </script>
+</section>
+
 
   
 
 </article>
+
     </div>
   </main>
 
@@ -207,7 +265,7 @@
     </div>
 
     <div class="mog-footer-middle">
-      <nav class="mog-footer-nav">
+      <nav class="mog-footer-nav" aria-label="Footer navigation">
         
         
           
@@ -240,7 +298,7 @@
     <div class="mog-footer-right">
       <p class="mog-footer-scripture">
         “Be watchful, stand firm in the faith, act like men, be strong.”  
-        <span>— 1 Corinthians 16:13</span>
+        <span class="mog-footer-scripture-ref">— 1 Corinthians 16:13</span>
       </p>
     </div>
 
@@ -250,74 +308,18 @@
     <p>&copy; 2026 Men of God. All rights reserved.</p>
   </div>
 </footer>
+
+
+  <!-- Icon base path for theme toggle -->
   <script>
-  const header = document.querySelector('.mog-header');
-  const nav = document.getElementById('mogNav');
-  const toggle = document.getElementById('mogNavToggle');
+    window.mogIconBase = "/menofgod-site/assets/page/icons/";
+  </script>
 
-  // Transparent → solid on scroll
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
+  <!-- Nav + header behavior -->
+  <script src="/menofgod-site/assets/js/main.js"></script>
 
-  // Toggle mobile menu
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('show');
-    toggle.classList.toggle('active');
-  });
+  <!-- Theme toggle behavior -->
+  <script src="/menofgod-site/assets/js/theme-toggle.js"></script>
 
-  // Auto-close when clicking a link
-  nav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('show');
-      toggle.classList.remove('active');
-    });
-  });
-
-  // Auto-close when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!header.contains(e.target)) {
-      nav.classList.remove('show');
-      toggle.classList.remove('active');
-    }
-  });
-</script>
-<script>
-  const root = document.documentElement;
-  const toggleBtn = document.getElementById("themeToggle");
-  const themes = ["light", "dark", "system"];
-  let currentTheme = localStorage.getItem("theme") || "system";
-
-  // Correct Jekyll-safe icon paths
-  const iconMap = {
-    light: "/menofgod-site/assets/page/icons/sun.svg",
-    dark: "/menofgod-site/assets/page/icons/moon.svg",
-    system: "/menofgod-site/assets/page/icons/gear.svg"
-  };
-
-  function applyTheme(theme) {
-    if (theme === "system") {
-      root.removeAttribute("data-theme");
-      localStorage.removeItem("theme");
-    } else {
-      root.setAttribute("data-theme", theme);
-      localStorage.setItem("theme", theme);
-    }
-
-    toggleBtn.innerHTML = `<img src="${iconMap[theme]}" alt="${theme} mode">`;
-  }
-
-  function cycleTheme() {
-    const nextIndex = (themes.indexOf(currentTheme) + 1) % themes.length;
-    currentTheme = themes[nextIndex];
-    applyTheme(currentTheme);
-  }
-
-  applyTheme(currentTheme);
-</script>
 </body>
 </html>

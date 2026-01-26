@@ -8,14 +8,14 @@
 <meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Men of God" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://brothersinchrist.github.io/menofgod-site/copilot/copilot-custom-prompts/Translate%20to%20Chinese.html" />
-<meta property="og:url" content="https://brothersinchrist.github.io/menofgod-site/copilot/copilot-custom-prompts/Translate%20to%20Chinese.html" />
+<link rel="canonical" href="https://brothersinchrist.github.io/menofgod-site/assets/css/main.scss.save" />
+<meta property="og:url" content="https://brothersinchrist.github.io/menofgod-site/assets/css/main.scss.save" />
 <meta property="og:site_name" content="Men of God" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Men of God" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","headline":"Men of God","url":"https://brothersinchrist.github.io/menofgod-site/copilot/copilot-custom-prompts/Translate%20to%20Chinese.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","headline":"Men of God","url":"https://brothersinchrist.github.io/menofgod-site/assets/css/main.scss.save"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/menofgod-site/assets/css/main.css">
   <link rel="manifest" href="/menofgod-site/assets/page/icons/site.webmanifest">
@@ -110,11 +110,55 @@
 
   <main class="mog-main">
     <div class="mog-container">
-      <p>Translate {} into Chinese:
-    1. Preserve the meaning and tone
-    2. Maintain appropriate cultural context
-    3. Keep formatting and structure
-    Return only the translated text.</p>
+      /* -----------------------------------------
+   MEN OF GOD — MASTER STYLESHEET
+   Loads all SCSS partials from _sass/mog/
+----------------------------------------- */
+
+/* Base theme from Minimal Mistakes */
+@import "minimal-mistakes";
+
+/* -----------------------------------------
+   CORE SYSTEM
+----------------------------------------- */
+@import "mog/tokens/_variables";
+@import "mog/_sizing";
+@import "mog/_tokens.scss";
+@import "mog/_grid.scss";
+@import "mog/_typography";
+@import "mog/base";
+@import "mog/layout";
+
+/* -----------------------------------------
+   COMPONENTS
+----------------------------------------- */
+@import "mog/buttons";
+@import "mog/cards";
+@import "mog/forms";
+@import "mog/modals";
+@import "mog/pullquotes";
+@import "mog/share-bar";
+@import "mog/social";
+@import "mog/toggle";
+
+/* -----------------------------------------
+   STRUCTURAL SECTIONS
+----------------------------------------- */
+@import "mog/header";
+@import "mog/hero";
+@import "mog/mission";
+@import "mog/sections";
+@import "mog/contact";
+@import "mog/partners";
+@import "mog/footer";
+
+/* -----------------------------------------
+   PAGE LAYOUTS
+----------------------------------------- */
+@import "mog/about";
+@import "mog/blog";
+@import "mog/episodes";
+@import "mog/products";
 
     </div>
   </main>
