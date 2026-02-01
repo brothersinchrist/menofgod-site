@@ -2574,7 +2574,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Men of God Tee",
-        "excerpt":"This tee is built for men who stand firm in the faith.   ","categories": [],
+        "excerpt":" ","categories": ["apparel"],
         "tags": [],
         "url": "/menofgod-site/store/ct-shirt-001/",
         "teaser": null
