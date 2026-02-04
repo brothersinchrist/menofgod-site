@@ -5360,7 +5360,7 @@ body {
 /* -----------------------------------------
    METADATA / SMALL TEXT
 ----------------------------------------- */
-.mog-meta, .mog-episode-card-meta, .mog-blog-card-meta {
+.mog-meta, .mog-episode-card-meta {
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.25px;
@@ -5451,6 +5451,10 @@ a:hover {
   color: var(--accent-dark);
 }
 
+a:visited {
+  color: inherit;
+}
+
 /* -----------------------------------------
    BLOCKQUOTE
 ----------------------------------------- */
@@ -5469,10 +5473,11 @@ blockquote {
 ----------------------------------------- */
 body,
 .mog-card,
-.mog-partner-card,
-.mog-card-product,
+.mog-product-card,
 .mog-episode-card,
 .mog-blog-card,
+.mog-partner-card,
+.mog-host-card,
 .mog-header,
 .mog-nav,
 .mog-hero {
@@ -5573,7 +5578,7 @@ body,
 /* -----------------------------------------
    CARD BASE — UNIFIED TOKENS
 ----------------------------------------- */
-.mog-card, .mog-partner-card, .mog-card-product, .mog-episode-card, .mog-blog-card {
+.mog-card, .mog-product-card, .mog-episode-card, .mog-blog-card, .mog-partner-card, .mog-host-card {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 6px;
@@ -5581,165 +5586,32 @@ body,
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.mog-card:hover, .mog-partner-card:hover, .mog-card-product:hover, .mog-episode-card:hover, .mog-blog-card:hover {
+.mog-card:hover, .mog-product-card:hover, .mog-episode-card:hover, .mog-blog-card:hover, .mog-partner-card:hover, .mog-host-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 }
 
 /* -----------------------------------------
-   HOST CARDS — RUGGED + CINEMATIC
+   CARD LINK WRAPPER — FULLY CLICKABLE CARDS
 ----------------------------------------- */
-.mog-hosts-grid {
-  display: grid;
-  gap: 48px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  margin-top: 32px;
-}
-
-.mog-host-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 8px;
-  padding: 32px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-.mog-host-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-}
-
-.mog-host-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("/assets/page/textures/grit.png");
-  opacity: 0.06;
-  pointer-events: none;
-}
-
-.mog-host-image {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 24px;
-  border: 3px solid var(--accent);
-}
-
-.mog-host-name {
-  font-size: 1.25rem;
-  font-weight: 900;
-  margin-bottom: 8px;
-  color: var(--text-color);
-}
-
-.mog-host-summary {
-  font-size: 0.875rem;
-  opacity: 0.85;
-  margin-bottom: 24px;
-}
-
-.mog-host-bio {
-  font-size: 0.875rem;
-  line-height: 1.6;
-  opacity: 0.9;
-}
-.mog-host-bio p + p {
-  margin-top: 16px;
-}
-
-@media (max-width: 600px) {
-  .mog-host-card {
-    padding: 24px;
-  }
-  .mog-host-image {
-    width: 100px;
-    height: 100px;
-  }
-}
-/* -----------------------------------------
-   BLOG CARD
------------------------------------------ */
-.mog-blog-grid {
-  display: grid;
-  gap: 32px;
-  margin-top: 32px;
-}
-
-.mog-blog-card {
-  display: flex;
-  gap: 24px;
-  padding: 24px;
-}
-
-.mog-blog-card-image img {
-  width: 180px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 4px;
-  border: 1px solid var(--card-border);
-}
-
-.mog-blog-card-title {
-  margin: 0 0 8px;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.mog-blog-card-title a {
-  color: var(--text-color);
+.mog-card-link {
+  display: block;
   text-decoration: none;
+  color: inherit;
 }
-.mog-blog-card-title a:hover {
-  color: var(--accent);
-}
-
-.mog-blog-card-meta {
-  margin-bottom: 8px;
+.mog-card-link:hover, .mog-card-link:focus {
+  text-decoration: none;
+  color: inherit;
 }
 
-.mog-blog-card-summary {
-  opacity: 0.9;
-  margin-bottom: 16px;
-  font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-  .mog-blog-card {
-    flex-direction: column;
-  }
-  .mog-blog-card-image img {
-    width: 100%;
-    height: auto;
-  }
-}
 /* -----------------------------------------
-   EPISODE CARD — UNIFIED MEDIA SYSTEM
+   UNIFIED MEDIA SYSTEM
+   - mog-media: base wrapper
+   - modifiers: --video, --spotify, --audio-cover, --audio-player
+   - contexts: episode card, episode page, mini-player
 ----------------------------------------- */
-.mog-episodes-grid {
-  display: grid;
-  gap: 32px;
-  margin-top: 32px;
-}
-
-.mog-episode-card {
-  display: flex;
-  gap: 24px;
-  padding: 24px;
-}
-
-.mog-episode-card-image {
-  width: 180px;
-  flex-shrink: 0;
-}
-
-/* Unified media container */
-.mog-episode-thumb {
-  width: 180px;
-  height: 120px;
+/* Base media wrapper */
+.mog-media {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid var(--card-border);
@@ -5747,141 +5619,69 @@ body,
   position: relative;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
 }
-.mog-episode-thumb img,
-.mog-episode-thumb iframe {
+
+/* Episode page media should have no border or shadow */
+.mog-episode-media .mog-media {
+  border: none;
+  box-shadow: none;
+}
+
+/* Core media content */
+.mog-media iframe,
+.mog-media img,
+.mog-media audio {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
   border: 0;
 }
 
-/* 16:9 aspect ratio for iframe-based media */
-.mog-episode-thumb.video,
-.mog-episode-thumb.spotify {
-  height: auto;
+/* Type modifiers */
+/* Video + Spotify: 16:9 responsive */
+.mog-media--video,
+.mog-media--spotify {
   aspect-ratio: 16/9;
 }
-.mog-episode-thumb.video iframe,
-.mog-episode-thumb.spotify iframe {
-  width: 100%;
-  height: 100%;
+
+/* Audio cover: fixed height thumbnail */
+.mog-media--audio-cover {
+  height: 120px;
 }
 
-/* Audio covers stay fixed-size */
-.mog-episode-thumb.audio {
-  aspect-ratio: auto;
+/* Audio player: natural height, full width */
+.mog-media--audio-player {
+  height: auto;
+}
+.mog-media--audio-player audio {
+  height: 40px;
 }
 
-.mog-episode-card-title {
-  margin: 0 0 8px;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.mog-episode-card-title a {
-  color: var(--text-color);
-}
-.mog-episode-card-title a:hover {
-  color: var(--accent);
+/* Spotify quirks: kill internal min-width */
+.mog-media--spotify iframe,
+.mog-spotify-embed {
+  width: 100% !important;
+  min-width: 0 !important;
 }
 
-.mog-episode-card-meta {
-  margin-bottom: 8px;
-}
-
-.mog-episode-card-summary {
-  opacity: 0.9;
-  line-height: 1.55;
-  margin-bottom: 16px;
-  font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-  .mog-episode-card {
-    flex-direction: column;
-  }
-  .mog-episode-thumb {
-    width: 100%;
-    height: auto;
-  }
-  .mog-episode-thumb img {
-    width: 100%;
-    height: auto;
-  }
-}
 /* -----------------------------------------
-   PRODUCT CARD
+   SHARED CARD GRID UTILITIES
 ----------------------------------------- */
-.mog-products-grid {
+.mog-card-grid {
   display: grid;
   gap: 32px;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   margin-top: 32px;
 }
 
-.mog-card-product {
-  display: flex;
-  flex-direction: column;
-}
-.mog-card-product img {
-  width: 100%;
-  border-bottom: 1px solid var(--card-border);
+.mog-card-grid--auto {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-.mog-card-price {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 16px;
+.mog-card-grid--2col {
+  grid-template-columns: repeat(2, 1fr);
 }
 
-/* -----------------------------------------
-   PARTNER CARD
------------------------------------------ */
-.mog-partners-grid {
-  display: grid;
-  gap: 32px;
-  margin: 32px 0;
-  grid-template-columns: 1fr;
-}
-@media (min-width: 600px) {
-  .mog-partners-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1280px) {
-  .mog-partners-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.mog-partner-card {
-  padding: 32px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.mog-partner-logo img {
-  max-width: 160px;
-  max-height: 80px;
-  object-fit: contain;
-  margin: 0 auto;
-  filter: brightness(0.9);
-}
-
-.mog-partner-title {
-  font-size: 1.25rem;
-  font-weight: 900;
-  color: var(--text-color);
-}
-
-.mog-partner-summary {
-  font-size: 1rem;
-  opacity: 0.9;
-  line-height: 1.55;
+.mog-card-grid--3col {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* -----------------------------------------
@@ -6527,6 +6327,371 @@ body,
   }
 }
 /* -----------------------------------------
+   HOSTS GRID
+----------------------------------------- */
+.mog-hosts-grid {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 32px;
+}
+
+/* -----------------------------------------
+   HOST CARD
+   Uses shared .mog-card system
+----------------------------------------- */
+.mog-host-card {
+  padding: 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  /* Slightly stronger hover than standard cards */
+}
+.mog-host-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Grit overlay */
+.mog-host-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/assets/page/textures/grit.png");
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+/* -----------------------------------------
+   HOST IMAGE
+----------------------------------------- */
+.mog-host-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 24px;
+  border: 3px solid var(--accent);
+}
+
+/* -----------------------------------------
+   HOST NAME
+----------------------------------------- */
+.mog-host-name {
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+/* -----------------------------------------
+   HOST SUMMARY
+----------------------------------------- */
+.mog-host-summary {
+  font-size: 0.875rem;
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+/* -----------------------------------------
+   HOST BIO (Markdown)
+----------------------------------------- */
+.mog-host-bio {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+.mog-host-bio p + p {
+  margin-top: 16px;
+}
+
+/* -----------------------------------------
+   RESPONSIVE
+----------------------------------------- */
+@media (max-width: 600px) {
+  .mog-host-card {
+    padding: 24px;
+  }
+  .mog-host-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* -----------------------------------------
+   PARTNER CARD
+   Uses shared .mog-card system
+----------------------------------------- */
+.mog-partner-card {
+  padding: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Logo */
+.mog-partner-logo img {
+  max-width: 160px;
+  max-height: 80px;
+  object-fit: contain;
+  margin: 0 auto;
+  filter: brightness(0.9);
+}
+
+/* Title */
+.mog-partner-title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--text-color);
+  letter-spacing: 0.25px;
+}
+
+/* Summary */
+.mog-partner-summary {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* -----------------------------------------
+   RESPONSIVE
+----------------------------------------- */
+@media (max-width: 600px) {
+  .mog-partner-card {
+    padding: 24px;
+  }
+  .mog-partner-title {
+    font-size: 1rem;
+  }
+}
+/* -----------------------------------------
+   BLOG CARD — INDEX LISTING
+   Uses shared .mog-card + .mog-media systems
+----------------------------------------- */
+/* Blog index grid */
+.mog-blog-grid {
+  display: grid;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+/* Blog card container */
+.mog-blog-card {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+
+/* Blog card image */
+.mog-blog-card-image img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--card-border);
+  background: #000;
+}
+
+/* Blog card content */
+.mog-blog-card-content {
+  flex: 1;
+}
+
+/* Title */
+.mog-blog-card-title {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.mog-blog-card-title a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.mog-blog-card-title a:hover {
+  color: var(--accent);
+}
+
+/* Meta */
+.mog-blog-card-meta {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-bottom: 8px;
+}
+
+/* Summary */
+.mog-blog-card-summary {
+  opacity: 0.9;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* -----------------------------------------
+   RESPONSIVE
+----------------------------------------- */
+@media (max-width: 768px) {
+  .mog-blog-card {
+    flex-direction: column;
+  }
+  .mog-blog-card-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* -----------------------------------------
+   EPISODE CARD — INDEX LISTING
+   Uses shared .mog-card + .mog-media systems
+----------------------------------------- */
+/* Grid for episode index */
+.mog-episodes-grid {
+  display: grid;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+/* Episode card container */
+.mog-episode-card {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+
+/* Media column */
+.mog-episode-card-image {
+  width: 180px;
+  flex-shrink: 0;
+}
+.mog-episode-card-image .mog-media {
+  width: 180px;
+}
+
+/* Content column */
+.mog-episode-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.mog-episode-card-title {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.mog-episode-card-title a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.mog-episode-card-title a:hover {
+  color: var(--accent);
+}
+
+/* Meta row */
+.mog-episode-card-meta {
+  margin-bottom: 8px;
+}
+
+/* Summary */
+.mog-episode-card-summary {
+  opacity: 0.9;
+  line-height: 1.55;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+/* -----------------------------------------
+   RESPONSIVE
+----------------------------------------- */
+@media (max-width: 768px) {
+  .mog-episode-card {
+    flex-direction: column;
+  }
+  .mog-episode-card-image {
+    width: 100%;
+  }
+  .mog-episode-card-image .mog-media {
+    width: 100%;
+    height: auto;
+  }
+}
+/* -----------------------------------------
+   PRODUCT CARD
+   Uses shared .mog-card system
+----------------------------------------- */
+.mog-product-card {
+  display: flex;
+  flex-direction: column;
+}
+.mog-product-card img {
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid var(--card-border);
+}
+
+/* -----------------------------------------
+   PRODUCT CONTENT
+----------------------------------------- */
+.mog-product-content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 600px) {
+  .mog-product-content {
+    padding: 24px;
+  }
+}
+
+.mog-product-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+
+.mog-product-summary {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* -----------------------------------------
+   PRICE
+----------------------------------------- */
+.mog-product-price {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--accent);
+  margin-top: 8px;
+}
+
+/* -----------------------------------------
+   CTA BUTTON
+----------------------------------------- */
+.mog-product-cta {
+  margin-top: 24px;
+}
+.mog-product-cta a {
+  display: inline-block;
+  padding: 8px 24px;
+  background: var(--accent);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.mog-product-cta a:hover {
+  background: var(--accent-dark);
+}
+
+/* -----------------------------------------
    STRUCTURAL SECTIONS
 ----------------------------------------- */
 /* -----------------------------------------
@@ -7014,6 +7179,17 @@ body,
 }
 
 /* -----------------------------------------
+   TAGLINE
+----------------------------------------- */
+.mog-mission-tagline {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--text-color);
+}
+
+/* -----------------------------------------
    SCRIPTURE BLOCK
 ----------------------------------------- */
 .mog-mission-scripture {
@@ -7281,63 +7457,6 @@ body,
 }
 
 /* -----------------------------------------
-   PARTNER CARD
------------------------------------------ */
-.mog-partner-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 6px;
-  padding: 32px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.mog-partner-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
-}
-
-/* Logo */
-.mog-partner-logo img {
-  max-width: 160px;
-  max-height: 80px;
-  object-fit: contain;
-  margin: 0 auto;
-  filter: brightness(0.9);
-}
-
-/* Title */
-.mog-partner-title {
-  font-size: 1.25rem;
-  font-weight: 900;
-  color: var(--text-color);
-  letter-spacing: 0.25px;
-}
-
-/* Summary */
-.mog-partner-summary {
-  font-size: 1rem;
-  line-height: 1.6;
-  opacity: 0.9;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-/* -----------------------------------------
-   RESPONSIVE
------------------------------------------ */
-@media (max-width: 600px) {
-  .mog-partner-card {
-    padding: 24px;
-  }
-  .mog-partner-title {
-    font-size: 1rem;
-  }
-}
-/* -----------------------------------------
    MEN OF GOD — FOOTER (Unified Tokens)
 ----------------------------------------- */
 .mog-footer {
@@ -7552,84 +7671,6 @@ body,
   }
 }
 /* -----------------------------------------
-   BLOG INDEX
------------------------------------------ */
-.mog-blog-grid {
-  display: grid;
-  gap: 32px;
-  margin-top: 32px;
-}
-
-/* -----------------------------------------
-   BLOG CARD (Unified with Episode + Product Cards)
------------------------------------------ */
-.mog-blog-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  padding: 24px;
-  border-radius: 6px;
-  display: flex;
-  gap: 24px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-.mog-blog-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
-}
-
-.mog-blog-card-image img {
-  width: 180px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 4px;
-  border: 1px solid var(--card-border);
-  background: #000;
-}
-
-.mog-blog-card-content {
-  flex: 1;
-}
-
-.mog-blog-card-title {
-  margin: 0 0 8px;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.mog-blog-card-title a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-.mog-blog-card-title a:hover {
-  color: var(--accent);
-}
-
-.mog-blog-card-meta {
-  font-size: 0.75rem;
-  opacity: 0.7;
-  margin-bottom: 8px;
-}
-
-.mog-blog-card-summary {
-  opacity: 0.9;
-  margin-bottom: 16px;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* -----------------------------------------
-   MOBILE
------------------------------------------ */
-@media (max-width: 768px) {
-  .mog-blog-card {
-    flex-direction: column;
-  }
-  .mog-blog-card-image img {
-    width: 100%;
-    height: auto;
-  }
-}
-/* -----------------------------------------
    BLOG POST LAYOUT
 ----------------------------------------- */
 .mog-post {
@@ -7681,7 +7722,7 @@ body,
 }
 
 /* -----------------------------------------
-   EPISODE PAGE — MEDIA FIRST LAYOUT
+   EPISODE PAGE — MEDIA-FIRST LAYOUT
 ----------------------------------------- */
 .mog-episode {
   max-width: 900px;
@@ -7691,61 +7732,40 @@ body,
 }
 
 /* -----------------------------------------
-   MEDIA BLOCK
+   MEDIA BLOCK (uses unified .mog-media system)
 ----------------------------------------- */
 .mog-episode-media {
   margin-bottom: 32px;
+  /* Hero-style video */
 }
-
-.mog-episode-cover {
+.mog-episode-media .mog-media--video {
   width: 100%;
-  border-radius: 6px;
-  border: 1px solid var(--card-border);
-  display: block;
-  background: #000;
+  max-width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
 }
-
-.mog-episode-audio {
+.mog-episode-media {
+  /* Hero-style Spotify */
+}
+.mog-episode-media .mog-media--spotify {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+}
+.mog-episode-media {
+  /* Audio cover */
+}
+.mog-episode-media .mog-media--audio-cover {
+  width: 100%;
+  border-radius: 8px;
+}
+.mog-episode-media {
+  /* Audio player */
+}
+.mog-episode-media .mog-media--audio-player {
   width: 100%;
   margin-top: 16px;
-}
-
-/* Responsive video */
-.mog-video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  border-radius: 6px;
-  background: #000;
-  border: 1px solid var(--card-border);
-}
-.mog-video-wrapper iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* Base Spotify embed */
-.mog-spotify-embed {
-  width: 100%;
-  border: 0;
-  border-radius: var(--mog-radius-md);
-  display: block;
-  overflow: hidden;
-}
-
-/* Compact (152px) */
-.mog-spotify-embed-compact {
-  height: 152px;
-}
-
-/* Large (352px) */
-.mog-spotify-embed-large {
-  height: 352px;
 }
 
 /* -----------------------------------------
@@ -7841,7 +7861,7 @@ body,
 }
 
 /* -----------------------------------------
-   STICKY MINI PLAYER
+   STICKY MINI PLAYER (uses unified .mog-media)
 ----------------------------------------- */
 .mog-mini-player {
   position: fixed;
@@ -7862,14 +7882,24 @@ body,
   bottom: 0;
 }
 
-.mini-video iframe {
-  width: 140px;
-  height: 80px;
-  border: 0;
+/* Mini-player media */
+.mog-mini-player .mog-media {
+  width: 160px;
+  flex-shrink: 0;
 }
 
-.mini-audio audio {
-  width: 200px;
+/* Mini-player video + Spotify */
+.mog-mini-player .mog-media--video,
+.mog-mini-player .mog-media--spotify {
+  aspect-ratio: 16/9;
+}
+
+/* Mini-player audio */
+.mog-mini-player .mog-media--audio-player {
+  height: auto;
+}
+.mog-mini-player .mog-media--audio-player audio {
+  width: 100%;
 }
 
 .mini-info {
@@ -7922,89 +7952,6 @@ body,
   gap: 32px;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   margin-top: 32px;
-}
-
-/* -----------------------------------------
-   PRODUCT CARD
------------------------------------------ */
-.mog-product-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
-}
-.mog-product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
-}
-.mog-product-card img {
-  width: 100%;
-  border-bottom: 1px solid var(--card-border);
-  object-fit: cover;
-}
-
-/* -----------------------------------------
-   PRODUCT CONTENT
------------------------------------------ */
-.mog-product-content {
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-@media (max-width: 600px) {
-  .mog-product-content {
-    padding: 24px;
-  }
-}
-
-.mog-product-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-color);
-  margin-bottom: 4px;
-}
-
-.mog-product-summary {
-  font-size: 1rem;
-  line-height: 1.6;
-  opacity: 0.9;
-}
-
-/* -----------------------------------------
-   PRICE
------------------------------------------ */
-.mog-product-price {
-  font-size: 1.25rem;
-  font-weight: 900;
-  color: var(--accent);
-  margin-top: 8px;
-}
-
-/* -----------------------------------------
-   CTA BUTTON
------------------------------------------ */
-.mog-product-cta {
-  margin-top: 24px;
-}
-.mog-product-cta a {
-  display: inline-block;
-  padding: 8px 24px;
-  background: var(--accent);
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.25px;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background 0.2s ease;
-}
-.mog-product-cta a:hover {
-  background: var(--accent-dark);
 }
 
 /*# sourceMappingURL=main.css.map */

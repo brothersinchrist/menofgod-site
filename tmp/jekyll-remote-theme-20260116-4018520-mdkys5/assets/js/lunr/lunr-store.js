@@ -12,7 +12,7 @@ var store = [{
         "teaser": null
       },{
         "title": "About",
-        "excerpt":"Our Mission Men of God exists to equip men to lead with courage, conviction, and Christ at the center. We believe men are called to stand firm, build strong families, and serve their communities with humility and strength. Our ministry is built on a simple truth: God uses ordinary men...","categories": [],
+        "excerpt":"Meet the Hosts DeShun Husband, father, and co‑host and founder of Men of God. Tom Retired Air Force veteran, husband, father, and co‑host of Men of God. Our Partners Caring Solutions Hope Offered. Futures Changed. Visit Website Samaritan's Purse Samaritan's Purse brings physical relief and the hope of the Gospel...","categories": [],
         "tags": [],
         "url": "/menofgod-site/about/",
         "teaser": null
@@ -42,7 +42,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Episodes",
-        "excerpt":"                                                                                                    Example YouTube Episode                   January 17, 2026        • Example Author        • Video                   This is an example summary                                                                                                   Why Most Christians Get Discipleship Wrong                   January 08, 2026               • Video                                                                                                                           Hard Men Podcast                   July 09, 2025        • Eric Conn        • Audio                   Building Bands of Brothers: What This Looks Like in Ogden                   ","categories": [],
+        "excerpt":"                                                                                             Example YouTube Episode                   January 17, 2026        • Example Author        • Video                   This is an example summary                                                                                            Why Most Christians Get Discipleship Wrong                   January 08, 2026               • Video                                                                                                                  Hard Men Podcast                   July 09, 2025        • Eric Conn        • Audio                   Building Bands of Brothers: What This Looks Like in Ogden                   ","categories": [],
         "tags": [],
         "url": "/menofgod-site/episodes/",
         "teaser": null
@@ -54,13 +54,13 @@ var store = [{
         "teaser": null
       },{
         "title": "Partner Organizations",
-        "excerpt":"These are the ministries, networks, and organizations we stand alongside.                                                Caring Solutions              Hope Offered. Futures Changed.                            Visit Website                                                             Samaritan's Purse              Samaritan's Purse brings physical relief and the hope of the Gospel to hurting people around the world.                            Visit Website                        ","categories": [],
+        "excerpt":"                                                     Caring Solutions              Hope Offered. Futures Changed.                            Visit Website                                                             Samaritan's Purse              Samaritan's Purse brings physical relief and the hope of the Gospel to hurting people around the world.                            Visit Website                           ","categories": [],
         "tags": [],
         "url": "/menofgod-site/partners/",
         "teaser": null
       },{
         "title": "The Shop",
-        "excerpt":"                                                                               Man of God Mug                       $15                          View Product                                                                  Men of God Tee                       $29.99                          View Product                                                                  Men's Faith Journal                       $29.99                          View Product                                        ","categories": [],
+        "excerpt":"                                                                                            Man of God Mug                             $15                                  View Product                                                                                       Men of God Tee                             $29.99                                  View Product                                                                                       Men's Faith Journal                             $29.99                                  View Product                                                ","categories": [],
         "tags": [],
         "url": "/menofgod-site/store/",
         "teaser": null
@@ -2592,7 +2592,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Our Mission",
-        "excerpt":"Men of God exists to equip men to lead with courage, conviction, and Christ at the center. We believe men are called to stand firm, build strong families, and serve their communities with humility and strength. Our ministry is built on a simple truth: God uses ordinary men — from...","categories": [],
+        "excerpt":"Test Men of God exists to equip men to lead with courage, conviction, and Christ at the center. We believe men are called to stand firm, build strong families, and serve their communities with humility and strength. Our ministry is built on a simple truth: God uses ordinary men —...","categories": [],
         "tags": [],
         "url": "/menofgod-site/webparts/about/01-mission.html",
         "teaser": null
@@ -2643,5 +2643,11 @@ var store = [{
         "excerpt":" ","categories": [],
         "tags": [],
         "url": "/menofgod-site/webparts/heroes/store.html",
+        "teaser": null
+      },{
+        "title": "intro",
+        "excerpt":"These are the ministries, networks, and organizations we stand alongside.  ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/webparts/partners/01-intro.html",
         "teaser": null
       }]
