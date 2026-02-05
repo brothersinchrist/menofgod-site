@@ -2609,12 +2609,6 @@ var store = [{
         "url": "/menofgod-site/webparts/about/story.html",
         "teaser": null
       },{
-        "title": "Test",
-        "excerpt":" ","categories": [],
-        "tags": [],
-        "url": "/menofgod-site/webparts/about/test.html",
-        "teaser": null
-      },{
         "title": "00 Hero",
         "excerpt":" ","categories": [],
         "tags": [],
