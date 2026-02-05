@@ -2598,7 +2598,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Our Mission",
-        "excerpt":"Test Men of God exists to equip men to lead with courage, conviction, and Christ at the center. We believe men are called to stand firm, build strong families, and serve their communities with humility and strength. Our ministry is built on a simple truth: God uses ordinary men —...","categories": [],
+        "excerpt":"Men of God exists to equip men to lead with courage, conviction, and Christ at the center. We believe men are called to stand firm, build strong families, and serve their communities with humility and strength. Our ministry is built on a simple truth: God uses ordinary men — from...","categories": [],
         "tags": [],
         "url": "/menofgod-site/webparts/about/mission.html",
         "teaser": null
