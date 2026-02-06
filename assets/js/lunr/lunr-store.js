@@ -12,7 +12,7 @@ var store = [{
         "teaser": null
       },{
         "title": "About",
-        "excerpt":"Meet the Hosts DeShun Husband, father, and co‑host and founder of Men of God. Tom Retired Air Force veteran, husband, father, and co‑host of Men of God. Our Partners Caring Solutions Hope Offered. Futures Changed. Visit Website Samaritan's Purse Samaritan's Purse brings physical relief and the hope of the Gospel...","categories": [],
+        "excerpt":" ","categories": [],
         "tags": [],
         "url": "/menofgod-site/about/",
         "teaser": null
