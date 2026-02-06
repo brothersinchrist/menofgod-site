@@ -48,7 +48,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Home",
-        "excerpt":"Forging men of God through truth, brotherhood, and battle-tested faith. Men of God exists to call men out of passivity and into purpose — to stand firm, lead courageously, and live surrendered to Christ in every arena of life. Through honest conversations, biblical teaching, and real stories from the trenches,...","categories": [],
+        "excerpt":" ","categories": [],
         "tags": [],
         "url": "/menofgod-site/",
         "teaser": null
