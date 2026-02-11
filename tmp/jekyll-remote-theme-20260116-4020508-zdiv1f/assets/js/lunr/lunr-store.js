@@ -42,7 +42,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Episodes",
-        "excerpt":"                                                                                             Example YouTube Episode                   January 17, 2026        • Example Author        • Video                   This is an example summary                                                                                            Why Most Christians Get Discipleship Wrong                   January 08, 2026               • Video                                                                                                                  Hard Men Podcast                   July 09, 2025        • Eric Conn        • Audio                   Building Bands of Brothers: What This Looks Like in Ogden                   ","categories": [],
+        "excerpt":"Test Post February 11, 2026 • Video Example YouTube Episode January 17, 2026 • Example Author • Video This is an example summary Why Most Christians Get Discipleship Wrong January 08, 2026 • Video Hard Men Podcast July 09, 2025 • Eric Conn • Audio Building Bands of Brothers: What...","categories": [],
         "tags": [],
         "url": "/menofgod-site/episodes/",
         "teaser": null
@@ -2537,12 +2537,6 @@ var store = [{
         "url": "/menofgod-site/2026/01/13/faithful-stewards-of-gods-grace.html",
         "teaser": null
       },{
-        "title": "Test Post",
-        "excerpt":"This video is awesome!  You should really check it out.  ","categories": [],
-        "tags": [],
-        "url": "/menofgod-site/2026/01/14/this-is-a-test-post-copy.html",
-        "teaser": null
-      },{
         "title": "Test Post 2",
         "excerpt":"This video is awesome!  You should really check it out.  ","categories": [],
         "tags": [],
@@ -2571,6 +2565,12 @@ var store = [{
         "excerpt":" ","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/02/01/new-post-again.html",
+        "teaser": null
+      },{
+        "title": "Test Post",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/menofgod-site/2026/02/11/this-is-a-test-post-copy.html",
         "teaser": null
       },{
         "title": "Man of God Mug",
