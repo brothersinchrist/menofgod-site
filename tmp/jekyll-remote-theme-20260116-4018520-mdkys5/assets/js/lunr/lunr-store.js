@@ -42,7 +42,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Episodes",
-        "excerpt":"Test Post February 11, 2026 • Video Example YouTube Episode January 17, 2026 • Example Author • Video This is an example summary Why Most Christians Get Discipleship Wrong January 08, 2026 • Video Hard Men Podcast July 09, 2025 • Eric Conn • Audio Building Bands of Brothers: What...","categories": [],
+        "excerpt":"                                                                                             Test Post                   February 11, 2026               • Video                                                                                                  Example YouTube Episode                   January 17, 2026        • Example Author        • Video                   This is an example summary                                                                                            Why Most Christians Get Discipleship Wrong                   January 08, 2026               • Video                                                                                                                  Hard Men Podcast                   July 09, 2025               • Audio                         ","categories": [],
         "tags": [],
         "url": "/menofgod-site/episodes/",
         "teaser": null
@@ -2478,7 +2478,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Hard Men Podcast",
-        "excerpt":"In the last few episodes we’ve worked through the “Why?” and “How?” of building a band of brothers in your local church context. In this episode of the Hard Men Podcast Ethan Senn and Tate Taylor sit down to wrap up the series by describing the different brotherhoods, groups, and...","categories": [],
+        "excerpt":" ","categories": [],
         "tags": [],
         "url": "/menofgod-site/2025/07/09/hard-men-podcast.html",
         "teaser": null
