@@ -2520,7 +2520,7 @@ var store = [{
         "teaser": null
       },{
         "title": "New blog post",
-        "excerpt":"This is a new blog post using Obsidian - H1 Testing the Pages CMS editor. - H2 Another line to test the headers - H3 Testing Obsidian header levels - H4 Testing Obsidian header levels - H5 Testing Obsidian header levels - H6 “This is a callout” -– Author unknown...","categories": [],
+        "excerpt":" ","categories": [],
         "tags": [],
         "url": "/menofgod-site/2026/01/09/new-blog-post.md.html",
         "teaser": null
