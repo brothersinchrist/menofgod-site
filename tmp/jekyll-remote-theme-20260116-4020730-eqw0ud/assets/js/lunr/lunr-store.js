@@ -18,7 +18,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Blog",
-        "excerpt":"Why Strong Men Build Strong Families January 18, 2026 Biblical leadership starts at home. Here’s why it matters more than ever. The Lord is My portion! January 18, 2026 • Tom Parks When God calls us to step out in faith, He proves Himself to be our portion, our provider,...","categories": [],
+        "excerpt":"Why Strong Men Build Strong Families January 18, 2026 • Tom Parks Biblical leadership starts at home. Here’s why it matters more than ever. The Lord is My portion! January 18, 2026 • Tom Parks When God calls us to step out in faith, He proves Himself to be our...","categories": [],
         "tags": [],
         "url": "/menofgod-site/blog/",
         "teaser": null
