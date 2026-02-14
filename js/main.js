@@ -27,9 +27,9 @@
 
   // Auto-close when clicking outside
   document.addEventListener('click', (e) => {
-    if (!header.contains(e.target)) {
-      nav.classList.remove('show');
-      toggle.classList.remove('active');
-    }
-  });
+  if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+    nav.classList.remove('show');
+    toggle.classList.remove('active');
+  }
+});
 
