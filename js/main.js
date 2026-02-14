@@ -2,22 +2,19 @@ const header = document.querySelector('.mog-header');
 const nav = document.getElementById('mogNav');
 const toggle = document.getElementById('mogNavToggle');
 
-// Transparent - solid on scroll
+// Transparent → solid header on scroll
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 10) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
+  header.classList.toggle('scrolled', window.scrollY > 10);
 });
 
 // Toggle mobile menu
-toggle.addEventListener('click', () => {
+toggle.addEventListener('click', (e) => {
+  e.stopPropagation();         // prevent document click from immediately closing
   nav.classList.toggle('show');
   toggle.classList.toggle('active');
 });
 
-// Auto-close when clicking a link
+// Auto-close when clicking a link inside nav
 nav.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('show');
@@ -25,11 +22,10 @@ nav.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Auto-close when clicking outside
+// Auto-close when clicking outside nav & toggle
 document.addEventListener('click', (e) => {
   if (!nav.contains(e.target) && !toggle.contains(e.target)) {
     nav.classList.remove('show');
     toggle.classList.remove('active');
   }
 });
-
