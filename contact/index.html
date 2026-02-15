@@ -250,48 +250,9 @@
   </div>
 </div>
 
-<script>
-  function comingSoon(name) {
-    openModal("Coming Soon", `${name} is not available yet, but it’s on the way.`);
-  }
-</script>
-
-<script>
-function openModal(title, message) {
-  const modal = document.getElementById("contact-modal");
-  const overlay = document.getElementById("contact-overlay");
-
-  document.getElementById("modal-title").textContent = title;
-  document.getElementById("modal-message").textContent = message;
-
-  modal.classList.add("active");
-  overlay.classList.add("show");
-
-  modal.setAttribute("aria-hidden", "false");
-  document.querySelector(".mog-modal-close").focus();
-}
-
-function closeModal() {
-  const modal = document.getElementById("contact-modal");
-  const overlay = document.getElementById("contact-overlay");
-
-  modal.classList.remove("active");
-  overlay.classList.remove("show");
-
-  modal.setAttribute("aria-hidden", "true");
-}
-
-// ESC close
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeModal();
-});
-
-// Click overlay to close
-document.addEventListener("click", (e) => {
-  const overlay = document.getElementById("contact-overlay");
-  if (e.target === overlay) closeModal();
-});
-</script>
+<script src="/menofgod-site/js/modal.js" defer></script>
+<script src="/menofgod-site/js/social.js" defer></script>
+<script src="/menofgod-site/js/contact.js" defer></script>
 
 
 
