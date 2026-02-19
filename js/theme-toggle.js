@@ -20,15 +20,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const iframe = document.querySelector("iframe.giscus-frame");
     if (!iframe || !giscusReady) return;
 
+    const theme = document.documentElement.getAttribute("data-theme");
+    const url = window.giscusThemes[theme] || window.giscusThemes.light;
+
     iframe.contentWindow.postMessage(
       {
         giscus: {
           setConfig: {
-            theme: window.giscusThemeUrl
+            theme: url
           }
         }
       },
-      "*"
+      "https://giscus.app"
     );
   }
 
