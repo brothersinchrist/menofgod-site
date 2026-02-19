@@ -1,0 +1,165 @@
+/* ---------------------------------------------------------
+   Men of God — Custom Giscus Theme
+   Typography + Color System Integration
+   (Hard-coded values based on your SCSS tokens)
+--------------------------------------------------------- */
+
+/* ---------------------------------------------------------
+   LIGHT THEME
+--------------------------------------------------------- */
+:root {
+  /* Colors mapped from your tokens */
+  --giscus-bg: #f8f6f2;
+  --giscus-bg-alt: #ffffff;
+  --giscus-text: #1f1f1c;
+  --giscus-text-muted: rgba(31, 31, 28, 0.65);
+  --giscus-border: rgba(60, 45, 20, 0.12);
+  --giscus-border-strong: rgba(60, 45, 20, 0.18);
+  --giscus-accent: #c28a2c;
+  --giscus-accent-hover: #9f6f22;
+  --giscus-focus: rgba(194, 138, 44, 0.35);
+
+  /* Typography mapped from your SCSS */
+  --giscus-font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Arial, sans-serif;
+  --giscus-font-heading: "Source Sans 3", system-ui, sans-serif;
+
+  --giscus-font-size-body: 1rem;        /* $font-size-md */
+  --giscus-font-size-meta: 0.875rem;    /* $font-size-sm */
+  --giscus-font-size-heading: 1.25rem;  /* $font-size-lg */
+
+  --giscus-line-height-body: 1.6;
+  --giscus-line-height-heading: 1.2;
+
+  --giscus-tracking-body: 0.01em;
+  --giscus-tracking-wide: 0.05em;
+
+  --giscus-weight-normal: 400;
+  --giscus-weight-medium: 500;
+  --giscus-weight-semibold: 600;
+  --giscus-weight-bold: 700;
+}
+
+/* ---------------------------------------------------------
+   BASE TYPOGRAPHY
+--------------------------------------------------------- */
+
+.giscus {
+  background: var(--giscus-bg) !important;
+  color: var(--giscus-text) !important;
+  font-family: var(--giscus-font-body) !important;
+  font-size: var(--giscus-font-size-body) !important;
+  line-height: var(--giscus-line-height-body) !important;
+  letter-spacing: var(--giscus-tracking-body) !important;
+}
+
+/* Comment text */
+.gsc-comment-content {
+  font-family: var(--giscus-font-body) !important;
+  font-size: var(--giscus-font-size-body) !important;
+  line-height: var(--giscus-line-height-body) !important;
+}
+
+/* Metadata (timestamps, usernames) */
+.gsc-comment-author,
+.gsc-comment-time {
+  font-size: var(--giscus-font-size-meta) !important;
+  opacity: 0.8 !important;
+}
+
+/* Headings inside comments (rare but supported) */
+.giscus h1,
+.giscus h2,
+.giscus h3 {
+  font-family: var(--giscus-font-heading) !important;
+  font-weight: var(--giscus-weight-bold) !important;
+  letter-spacing: var(--giscus-tracking-wide) !important;
+  line-height: var(--giscus-line-height-heading) !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* Links */
+.giscus a {
+  color: var(--giscus-accent) !important;
+  font-weight: var(--giscus-weight-medium) !important;
+}
+.giscus a:hover {
+  color: var(--giscus-accent-hover) !important;
+}
+
+/* Comment boxes */
+.gsc-comment-box,
+.gsc-comment-box-textarea {
+  background: var(--giscus-bg-alt) !important;
+  border-color: var(--giscus-border) !important;
+  color: var(--giscus-text) !important;
+  font-family: var(--giscus-font-body) !important;
+  font-size: var(--giscus-font-size-body) !important;
+}
+
+/* Buttons */
+.gsc-reply-button,
+.gsc-comment-box-buttons button {
+  background: var(--giscus-accent) !important;
+  color: #fff !important;
+  border: none !important;
+  font-weight: var(--giscus-weight-semibold) !important;
+  letter-spacing: var(--giscus-tracking-wide) !important;
+}
+.gsc-reply-button:hover,
+.gsc-comment-box-buttons button:hover {
+  background: var(--giscus-accent-hover) !important;
+}
+
+/* Borders */
+.gsc-divider,
+.gsc-comment {
+  border-color: var(--giscus-border) !important;
+}
+
+/* Focus rings */
+.giscus :focus-visible {
+  outline: 2px solid var(--giscus-focus) !important;
+  outline-offset: 2px !important;
+}
+
+/* ---------------------------------------------------------
+   DARK THEME
+--------------------------------------------------------- */
+html[data-theme="dark"] {
+  --giscus-bg: #171717;
+  --giscus-bg-alt: #242424;
+  --giscus-text: #f2f2f0;
+  --giscus-text-muted: rgba(242, 242, 240, 0.7);
+  --giscus-border: rgba(255, 255, 255, 0.14);
+  --giscus-border-strong: rgba(255, 255, 255, 0.2);
+  --giscus-accent: #e0bc78;
+  --giscus-accent-hover: #c28a2c;
+  --giscus-focus: rgba(194, 138, 44, 0.5);
+}
+
+/* Dark mode container */
+html[data-theme="dark"] .giscus {
+  background: var(--giscus-bg) !important;
+  color: var(--giscus-text) !important;
+}
+
+/* Dark mode comment boxes */
+html[data-theme="dark"] .gsc-comment-box,
+html[data-theme="dark"] .gsc-comment-box-textarea {
+  background: var(--giscus-bg-alt) !important;
+  border-color: var(--giscus-border) !important;
+  color: var(--giscus-text) !important;
+}
+
+/* Dark mode buttons */
+html[data-theme="dark"] .gsc-reply-button,
+html[data-theme="dark"] .gsc-comment-box-buttons button {
+  background: var(--giscus-accent) !important;
+  color: #000 !important;
+}
+html[data-theme="dark"] .gsc-reply-button:hover,
+html[data-theme="dark"] .gsc-comment-box-buttons button:hover {
+  background: var(--giscus-accent-hover) !important;
+}
