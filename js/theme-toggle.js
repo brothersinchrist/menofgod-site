@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.documentElement;
 
+  let giscusReady = false;
+
   const toggleBtn = document.getElementById("themeToggleBtn");
   const themeMenu = document.getElementById("themeMenu");
   const themeLabel = document.getElementById("themeLabel");
@@ -116,8 +118,6 @@ document.addEventListener("DOMContentLoaded", () => {
   applyTheme(saved);
 
   // Ensure Giscus syncs once iframe loads
-  let giscusReady = false;
-
   window.addEventListener("message", (event) => {
     if (event.origin !== "https://giscus.app") return;
     if (event.data?.giscus?.discussion) {
