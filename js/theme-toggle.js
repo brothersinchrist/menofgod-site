@@ -1,3 +1,4 @@
+javascript
 document.addEventListener("DOMContentLoaded", () => {
 
   const root = document.documentElement;
@@ -46,11 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const current = root.getAttribute("data-theme");
     const effective = getEffectiveTheme(current);
-    const url = window.giscusThemes[effective];
 
+    // Pass 'light' or 'dark' to Giscus
     iframe.contentWindow.postMessage(
-      { giscus: { setConfig: { theme: url } } },
-      "*"    // IMPORTANT: must be "*" per Giscus messaging behavior
+      { giscus: { setConfig: { theme: effective } } },
+      "https://giscus.app"
     );
   }
 
@@ -111,3 +112,4 @@ document.addEventListener("DOMContentLoaded", () => {
   applyTheme(saved);
 
 });
+
