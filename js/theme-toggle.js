@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const current = root.getAttribute("data-theme");
     const effective = getEffectiveTheme(current);
-    const url = window.giscusThemes[effective];
+    const url = window.mogTheme.getGiscusThemeUrl();
 
     iframe.contentWindow.postMessage(
       { giscus: { setConfig: { theme: url } } },

@@ -8,6 +8,11 @@
     (function () {
       const systemQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
+      const giscusThemes = {
+        light: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_light.css",
+        dark: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_dark.css"
+      };
+
       function getStoredTheme() {
         return localStorage.getItem("theme") || "system";
       }
@@ -19,13 +24,16 @@
           : saved;
       }
 
-      // Expose globally (synchronous, safe)
+      function getGiscusThemeUrl() {
+        return giscusThemes[getEffectiveTheme()];
+      }
+
       window.mogTheme = {
         getStoredTheme,
-        getEffectiveTheme
+        getEffectiveTheme,
+        getGiscusThemeUrl
       };
 
-      // Apply immediately to avoid flash
       document.documentElement.setAttribute(
         "data-theme",
         getEffectiveTheme()
@@ -423,33 +431,40 @@
 
 </div>
 
-  <script>
-  (function () {
-    const themes = {
-      light: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_light.css",
-      dark: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_dark.css"
-    };
+  
+<div class="mog-container mog-comments">
+  <section id="comments">
+    <meta
+  name="giscus:backlink"
+  content="/menofgod-site/episodes/2026-01-08-why-most-christians-get-discipleship-wrong/"
+>
 
-    const effective = window.mogTheme.getEffectiveTheme();
+    <script>
+      (function () {
+        const themeUrl = window.mogTheme.getGiscusThemeUrl();
+        const effective = window.mogTheme.getEffectiveTheme();
 
-    const script = document.createElement("script");
-    script.src = "https://giscus.app/client.js";
-    script.setAttribute("data-repo", "brothersinchrist/menofgod-site");
-    script.setAttribute("data-repo-id", "R_kgDOQzzv9A");
-    script.setAttribute("data-category", "Blog Comments");
-    script.setAttribute("data-category-id", "DIC_kwDOQzzv9M4C0vrd");
-    script.setAttribute("data-mapping", "pathname");
-    script.setAttribute("data-strict", "1");
-    script.setAttribute("data-reactions-enabled", "1");
-    script.setAttribute("data-input-position", "top");
-    script.setAttribute("data-theme", themes[effective]);
-    script.setAttribute("data-lang", "en");
-    script.setAttribute("crossorigin", "anonymous");
-    script.async = true;
+        const script = document.createElement("script");
+        script.src = "https://giscus.app/client.js";
+        script.setAttribute("data-repo", "brothersinchrist/menofgod-site");
+        script.setAttribute("data-repo-id", "R_kgDOQzzv9A");
+        script.setAttribute("data-category", "Blog Comments");
+        script.setAttribute("data-category-id", "DIC_kwDOQzzv9M4C0vrd");
+        script.setAttribute("data-mapping", "pathname");
+        script.setAttribute("data-strict", "1");
+        script.setAttribute("data-reactions-enabled", "1");
+        script.setAttribute("data-input-position", "top");
+        script.setAttribute("data-theme", themeUrl);
+        script.setAttribute("data-lang", "en");
+        script.setAttribute("crossorigin", "anonymous");
+        script.async = true;
 
-    document.currentScript.parentElement.appendChild(script);
-  })();
-</script>
+        document.currentScript.parentElement.appendChild(script);
+      })();
+    </script>
+  </section>
+</div>
+
 
 
 

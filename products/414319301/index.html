@@ -8,6 +8,11 @@
     (function () {
       const systemQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
+      const giscusThemes = {
+        light: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_light.css",
+        dark: "https://brothersinchrist.github.io/menofgod-site/css/goldsand_dark.css"
+      };
+
       function getStoredTheme() {
         return localStorage.getItem("theme") || "system";
       }
@@ -19,13 +24,16 @@
           : saved;
       }
 
-      // Expose globally (synchronous, safe)
+      function getGiscusThemeUrl() {
+        return giscusThemes[getEffectiveTheme()];
+      }
+
       window.mogTheme = {
         getStoredTheme,
-        getEffectiveTheme
+        getEffectiveTheme,
+        getGiscusThemeUrl
       };
 
-      // Apply immediately to avoid flash
       document.documentElement.setAttribute(
         "data-theme",
         getEffectiveTheme()
