@@ -1,4 +1,3 @@
-javascript
 document.addEventListener("DOMContentLoaded", () => {
 
   const root = document.documentElement;
@@ -112,4 +111,3 @@ document.addEventListener("DOMContentLoaded", () => {
   applyTheme(saved);
 
 });
-
