@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const effective = getEffectiveTheme(current);
       iframe.contentWindow.postMessage(
       { giscus: { setConfig: { theme: effective } } },
-        "https://giscus.app"
+        "*"
         );
     } catch (e) {
       // Don't break the rest of the script
