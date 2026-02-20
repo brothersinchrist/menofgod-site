@@ -50,8 +50,8 @@ main {
   --color-btn-primary-border: 1px solid #c28a2c;
   --color-btn-primary-shadow: 0 4px 12px rgba(0,0,0,.45);
   --color-btn-primary-inset-shadow: none;
-  --color-btn-primary-hover-bg: #c28a2c;
- --color-btn-primary-hover-border: 1px solid #9f6f22;
+  --color-btn-primary-hover-bg: #9f6f22;
+  --color-btn-primary-hover-border: 1px solid #9f6f22;
   --color-btn-primary-selected-bg: #9f6f22;
   --color-btn-primary-selected-shadow: none;
   --color-btn-primary-disabled-text: rgba(31,31,28,0.80);
