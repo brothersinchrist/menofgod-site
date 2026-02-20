@@ -401,7 +401,7 @@
     script.setAttribute("crossorigin", "anonymous");
     script.async = true;
 
-    document.getElementById("comments").appendChild(script);
+    document.currentScript.parentElement.appendChild(script);
   })();
 </script>
 
