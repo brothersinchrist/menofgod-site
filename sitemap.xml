@@ -3,6 +3,13 @@
 
 
   <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/partners/2026-02-15-caring-solutions/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/partners/2026-02-15-samaritans-purse/</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -11,13 +18,6 @@
 
   <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/partners/2026-02-15-the-salvation-army-warner-robins-corp/</loc>
-    <lastmod>2026-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/partners/2026-02-15-caring-solutions/</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -45,14 +45,14 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/blog/2026-01-08-the-lord-is-my-portion/</loc>
+    <loc>https://brothersinchrist.github.io/menofgod-site/blog/2026-01-07-why-strong-men-build-strong-families/</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/blog/2026-01-07-why-strong-men-build-strong-families/</loc>
+    <loc>https://brothersinchrist.github.io/menofgod-site/blog/2026-01-08-the-lord-is-my-portion/</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -101,13 +101,6 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-14-this-is-a-test-post-copy/</loc>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-14-this-is-another-test-post/</loc>
     <lastmod>2026-01-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -122,6 +115,13 @@
   </url>
 
   <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-14-this-is-a-test-post-copy/</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/the-shop/success/</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -129,28 +129,7 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/tags/</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/pages/about/</loc>
-    <lastmod>2026-02-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/blog/</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -179,6 +158,27 @@
 
   <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/the-shop/</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/tags/</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/blog/</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
