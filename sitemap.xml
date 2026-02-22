@@ -10,14 +10,14 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/partners/2026-02-15-the-salvation-army-warner-robins-corp/</loc>
+    <loc>https://brothersinchrist.github.io/menofgod-site/partners/2026-02-15-samaritans-purse/</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/partners/2026-02-15-samaritans-purse/</loc>
+    <loc>https://brothersinchrist.github.io/menofgod-site/partners/2026-02-15-the-salvation-army-warner-robins-corp/</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -45,22 +45,15 @@
   </url>
 
   <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-07-first-episode/</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-08-why-most-christians-get-discipleship-wrong/</loc>
     <lastmod>2026-01-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-16-hard-men-podcast/</loc>
-    <lastmod>2025-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-14-this-is-another-test-post/</loc>
-    <lastmod>2026-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -73,8 +66,15 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-07-first-episode/</loc>
+    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-14-this-is-another-test-post/</loc>
     <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-16-hard-men-podcast/</loc>
+    <lastmod>2025-07-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -150,14 +150,14 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/contact/</loc>
+    <loc>https://brothersinchrist.github.io/menofgod-site/blog/</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/blog/</loc>
+    <loc>https://brothersinchrist.github.io/menofgod-site/contact/</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
