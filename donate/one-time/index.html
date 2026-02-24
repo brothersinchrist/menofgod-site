@@ -48,7 +48,7 @@
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/menofgod-site/sitemap.xml">
 
   <!-- Page title -->
-  <title>Partners | Men of God</title>
+  <title>One-Time Gift | Men of God</title>
 
   <!-- Manifest -->
   <link rel="manifest" href="/menofgod-site/img/page/icons/site.webmanifest">
@@ -146,42 +146,6 @@
   
 
     
-      
-        
-
-
-<section class="mog-hero" role="banner">
-  <!-- Background -->
-  <div class="mog-hero-background" style="--hero-image: url('/menofgod-site/img/page/images/hero-bg.jpg')"></div>
-
-  <!-- Content -->
-  <div class="mog-hero-inner">
-    <div class="mog-container">
-
-      
-      
-        <h1 class="mog-hero-title">Partner Organizations</h1>
-      
-
-      
-      
-        <p class="mog-hero-tagline">These are the ministries, networks, and organizations we stand alongside.</p>
-      
-
-      
-      
-
-      
-      
-
-      
-      
-
-    </div>
-  </div>
-</section>
-      
-    
 
   
 
@@ -189,157 +153,93 @@
   
   
 
-<section class="mog-section mog-section-partners">  
-  <div class="mog-container">
+<section class="mog-section mog-section--wide">
+  <div class="mog-container mog-content-medium">
 
-      
-  
-      
-  
-      <div class="mog-partners-grid">  
-  
-        
+    <h1 class="mog-text-center">
+      One-Time Gift
+    </h1>
 
-          
-
-          <article class="mog-card mog-card--partner">
-
-  
-    <div class="mog-card-media">
-      <img
-        src="/menofgod-site/img/uploads/images/partners/CaringSolutions 2016.png"
-        alt="Caring Solutions"
-        loading="lazy"
-      >
-    </div>
-  
-
+    <div class="mog-donate-layout">
+      <div class="mog-card mog-card--donate">
   <div class="mog-card-body">
 
-    <h3 class="mog-card-title">
-      Caring Solutions
-    </h3>
-
-    
-      <p class="mog-card-summary">
-        Hope Offered. Futures Changed.
-      </p>
-    
-
-    
-      <div class="mog-card-cta">
-        <a
-          href="https://www.friendsofcaringsolutions.com/"
-          class="mog-btn mog-btn-secondary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit Website
-        </a>
-      </div>
-    
-
-  </div>
-
-</article>
-
-        
-
-          
-
-          <article class="mog-card mog-card--partner">
-
-  
-    <div class="mog-card-media">
-      <img
-        src="/menofgod-site/img/uploads/images/partners/sp-white-logo.png"
-        alt="Samaritan&#39;s Purse"
-        loading="lazy"
-      >
-    </div>
-  
-
-  <div class="mog-card-body">
-
-    <h3 class="mog-card-title">
-      Samaritan&#39;s Purse
-    </h3>
-
-    
-      <p class="mog-card-summary">
-        Samaritan&#39;s Purse brings physical relief and the hope of the Gospel to hurting people around the world.
-      </p>
-    
-
-    
-      <div class="mog-card-cta">
-        <a
-          href="https://www.samaritanspurse.org/"
-          class="mog-btn mog-btn-secondary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit Website
-        </a>
-      </div>
-    
-
-  </div>
-
-</article>
-
-        
-
-          
-
-          <article class="mog-card mog-card--partner">
-
-  
-    <div class="mog-card-media">
-      <img
-        src="/menofgod-site/img/uploads/images/partners/shield-en.svg"
-        alt="The Salvation Army - Warner Robins Corp"
-        loading="lazy"
-      >
-    </div>
-  
-
-  <div class="mog-card-body">
-
-    <h3 class="mog-card-title">
-      The Salvation Army - Warner Robins Corp
-    </h3>
-
-    
-      <p class="mog-card-summary">
-        Wherever there is a need in warner robins, georgia you&#39;ll find The Salvation Army. Find out how you can help.
-      </p>
-    
-
-    
-      <div class="mog-card-cta">
-        <a
-          href="https://southernusa.salvationarmy.org/warner-robins/"
-          class="mog-btn mog-btn-secondary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit Website
-        </a>
-      </div>
-    
-
-  </div>
-
-</article>
-
-        
-  
-      </div>
-  
+    <h2 class="mog-card-title mog-text-center-mobile">
       
-  
-  </div>  
+        Make a One-Time Gift
+      
+    </h2>
+
+    <p class="mog-card-text mog-card-summary mog-text-center-mobile">
+      
+        Your gift helps support the mission and content of Men of God.
+      
+    </p>
+
+    <form class="donation-form"
+      action="https://stripe-checkout-worker.menofgod-worker.workers.dev"
+      method="POST">
+
+      
+
+        <!-- One-Time Donation -->
+        <input type="hidden" name="type" value="donation">
+
+        <fieldset class="donation-form__options">
+          <legend class="visually-hidden">
+            Select donation amount
+          </legend>
+
+          <label class="donation-option">
+            <input type="radio" name="amount_option" value="10" required>
+            <span>$10</span>
+          </label>
+
+          <label class="donation-option donation-option--recommended">
+            <input type="radio" name="amount_option" value="25">
+            <span>$25</span>
+          </label>
+
+          <label class="donation-option">
+            <input type="radio" name="amount_option" value="50">
+            <span>$50</span>
+          </label>
+
+          <label class="donation-option donation-option--custom">
+            <input type="radio" name="amount_option" value="custom">
+            <span>Other</span>
+          </label>
+
+        </fieldset>
+
+        <div class="donation-form__custom">
+          <label>
+            Custom Amount
+            <input type="number"
+              name="custom_amount"
+              min="5"
+              step="1"
+              placeholder="Enter amount">
+          </label>
+        </div>
+
+      
+
+      <div class="mog-card-actions mog-text-center-mobile">
+        <button type="submit" class="mog-btn mog-btn-primary">
+          
+            Continue to Secure Checkout
+          
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+    </div>
+  </div>
 </section>
 
 

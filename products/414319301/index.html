@@ -162,7 +162,11 @@
 
   <!-- Main Image -->
   <div class="product-image">
-    <img id="product-image" src="https://files.cdn.printful.com/files/bfa/bfa20aadb6e5c3d4118406273efbbd10_preview.png" alt="Man of God - Iron Sharpens Iron">
+    <img
+      id="product-image"
+      src="https://files.cdn.printful.com/files/bfa/bfa20aadb6e5c3d4118406273efbbd10_preview.png"
+      alt="Man of God - Iron Sharpens Iron"
+    >
   </div>
 
   <!-- Variant Selectors -->
@@ -192,10 +196,15 @@
   </div>
 
   <!-- Checkout Form -->
-  <form id="checkout-form"
-        action="https://stripe-checkout-worker.menofgod-worker.workers.dev"
-        method="POST"
-        class="product-form">
+  <form
+    id="checkout-form"
+    action="https://stripe-checkout-worker.menofgod-worker.workers.dev"
+    method="POST"
+    class="product-form"
+  >
+
+    <!-- Explicit type for worker routing -->
+    <input type="hidden" name="type" value="store">
 
     <input type="hidden" name="product_id" value="414319301">
     <input type="hidden" name="price_id" id="stripe_price_id">
@@ -205,6 +214,7 @@
     <button type="submit" class="btn-primary">
       Buy Now
     </button>
+
   </form>
 
 </div>
@@ -215,6 +225,7 @@
 
 <script>
   const params = new URLSearchParams(window.location.search);
+
   if (params.get("canceled") === "true") {
     const banner = document.createElement("div");
     banner.className = "checkout-canceled-banner";
@@ -224,6 +235,7 @@
 </script>
 
 <script src="/menofgod-site/js/product-page.js"></script>
+
 
 
 
