@@ -87,6 +87,13 @@
   </url>
 
   <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-07-first-episode/</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-08-why-most-christians-get-discipleship-wrong/</loc>
     <lastmod>2026-01-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -96,13 +103,6 @@
   <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-14-this-is-a-test-post-copy/</loc>
     <lastmod>2026-02-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/episodes/2026-01-07-first-episode/</loc>
-    <lastmod>2026-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -164,13 +164,6 @@
   </url>
 
   <url>
-    <loc>https://brothersinchrist.github.io/menofgod-site/donate/</loc>
-    <lastmod>2026-02-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/episodes/</loc>
     <lastmod>2026-02-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -179,6 +172,13 @@
 
   <url>
     <loc>https://brothersinchrist.github.io/menofgod-site/partners/</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brothersinchrist.github.io/menofgod-site/donate/</loc>
     <lastmod>2026-02-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
